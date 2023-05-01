@@ -25,6 +25,10 @@ select {
   outline: none;
 }
 
+html {
+  font-size: 10px;
+}
+
 html,
 body {
   font-family: Arial, Helvetica, sans-serif;

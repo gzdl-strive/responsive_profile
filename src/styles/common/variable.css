@@ -10,4 +10,12 @@
 
   /* a element hover color */
   --link-color: var(--color-primary);
+
+  /* header variable */
+  --header-height: 3rem;
+  --header-boxShadow: 1px 1px solid var(--color-dark);
+
+  /* footer variable */
+  --footer-height: 10rem;
+  --footer-boxShadow: var(--header-boxShadow);
 }
