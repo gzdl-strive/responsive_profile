@@ -9,45 +9,62 @@
     <link rel="stylesheet" href="src/styles/index.css">
     <title>gzdl-strive's profile</title>
   </head>
-  <body>
+  <body> 
     <!-- ** header ** -->
-    <header class="header test__bg">
-      <nav class="nav grid">
-        <a href="javascript:void(0);" class="nav__logo" />
+    <header class="header">
+      <nav class="nav container flex between_center">
+        <a href="javascript:void(0);" class="nav__logo">
+          gzdl-strive
+        </a>
         <!-- nav -->
-        <ul class="nav__list">
-          <li><a href="#base">base</a></li>
-          <li><a href="#about">about</a></li>
-          <li><a href="#skill">skill</a></li>
-          <li><a href="#profile">profile</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
+        <div class="nav__menu">
+          <ul class="nav__list gap-3-2 flex">
+            <li class="nav__item">
+              <a href="#base" class="nav__link">base</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">about</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skill" class="nav__link">skill</a>
+            </li>
+            <li class="nav__item">
+              <a href="#profile" class="nav__link">profile</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">contact</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
     <!-- ** main-content ** -->
     <main class="main">
       <!-- base -->
-      <section id="base" class="base">
-        <div class="base__container">
-          <!-- <div class="base__content">
-            <div class="base__social">
+      <section id="base" class="base section">
+        <div class="base__container container">
+          <div class="base__content grid">
+            <div class="base__social grid">
               <a href="javascript:void(0);">icon1</a>
               <a href="javascript:void(0);">icon2</a>
               <a href="javascript:void(0);">icon3</a>
             </div>
             <div class="base__data">
-              <h2 class="base__title">Hi, I'm gzdl-strive</h2>
+              <h2 class="base__title">Hi, I'm <br />gzdl-strive</h2>
               <h3 class="base__subtitle">Frontend Developer</h3>
               <p class="base__description">
                 High level experience in web design and development knowledge,
                 producing quality work.
               </p>
-              <a href="#contact">contact me</a>
+              <a href="#contact" class="btn">
+                contact me
+                <span>icon</span>
+              </a>
             </div>
             <div class="base__img">
-              img
+              <img src="/logo.svg" width="80%" />
             </div>
-          </div> -->
+          </div>
           <!-- scroll -->
           <!-- <div class="base__scroll"></div> -->
         </div>
@@ -66,15 +83,15 @@
       <!-- <section id="contact" class="contact"></section> -->
     </main>
     <!-- ** footer ** -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__bg">
-        <div class="footer__container">
+        <div class="footer__container container grid gap-3-2">
           <div>
-            <h3 class="footer__title">GZDLPROFILE</h3>
-            <span class="footer__subTitle">Frontend Developer</span>
+            <h2 class="footer__title">GZDLPROFILE</h2>
+            <h3 class="footer__subtitle">Frontend Developer</h3>
           </div>
 
-          <ul class="footer__links">
+          <ul class="footer__links flex center_center gap-3-2">
             <li>
               <a href="#base" class="footer__link">base</a>
             </li>
@@ -85,6 +102,12 @@
               <a href="#profile" class="footer__link">profile</a>
             </li>
           </ul>
+
+          <div class="footer__socials">
+            <a href="javascript:void(0);" class="footer__social">icon1</a>
+            <a href="javascript:void(0);" class="footer__social">icon2</a>
+            <a href="javascript:void(0);" class="footer__social">icon3</a>
+          </div>
         </div>
 
         <p class="footer__copy">
@@ -97,7 +120,7 @@
           > 
         </p>
       </div>
-    </footer> -->
+    </footer>
     <script type="module" defer src="/main.js"></script>
   </body>
 </html>

@@ -1,0 +1,39 @@
+/* main section style */
+.section {
+  padding: 9.6rem 0 3.2rem;
+}
+
+/* || base */
+.base__content {
+  grid-template-columns: max-content 1fr 1fr;
+  column-gap: 3.2rem;
+  padding-top: 8.8rem;
+  align-items: center;
+}
+
+.base__social {
+  grid-template-columns: max-content;
+  row-gap: 1.6rem;
+}
+
+.base__title {
+  font-size: 3.2rem;
+  letter-spacing: 0.2rem;
+}
+
+.base__subtitle {
+  font-size: 1.8rem;
+  margin: 1.2rem 0;
+  color: var(--color-deepGray);
+  letter-spacing: .1rem;
+}
+
+.base__description {
+  font-size: 1.6rem;
+  color: var(--color-gray);
+  margin-bottom: 4rem;
+}
+
+.base__img {
+  text-align: center;
+}

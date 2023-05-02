@@ -1,3 +1,35 @@
+/* header style */
 .header {
   height: var(--header-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--color-light);
+  transition: box-shadow .3s linear;
+}
+
+.header--scroll {
+  box-shadow: 0 -0.1rem .3rem var(--color-dark);
+}
+
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+}
+
+.nav__logo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+}
+
+.nav__menu {
+  margin-left: auto;
+}
+
+.nav__link {
+  font-size: 1.6rem;
+  text-transform: capitalize;
 }
