@@ -4,12 +4,54 @@
 @import url("module/main.css"); /* import main style(主内容样式) */
 @import url("module/footer.css"); /* import footer style(页脚样式) */
 
-header,
-main {
+.header,
+.main {
   padding: var(--layout-padding);
 }
 
-@media screen and (min-width: 1024px) {
+/* sm */
+@media screen and (max-width: 767px) {
+  .header {
+    top: initial;
+    bottom: 0;
+  }
+  .section {
+    padding: 3rem 0 6.4rem;
+  }
+  .footer {
+    padding-bottom: var(--header-height);
+  }
+}
+
+/* xs */
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 9.6rem 0 3.2rem;
+  }
+}
+
+/* md */
+@media screen and (min-width: 992px) {
+  :root {
+    --fontSize-lg: 4.8rem;
+    --fontSize-md: 2.4rem;
+    --fontSize-sm: 1.8rem;
+    --fontSize-xs: 1.4rem;
+  }
+  .base__social {
+    transform: translateX(-8rem);
+  }
+}
+
+/* lg */
+@media screen and (min-width: 1200px) {
+  .header,
+  .main {
+    padding: 0;
+  }
+  .footer_container {
+    padding: 0;
+  }
   .base__social {
     transform: translateX(-9.6rem);
   }

@@ -11,6 +11,12 @@
   --color-deepGray: #4e4d4d;
   --color-purple: #6a58d8;
 
+  /* font size: lg大屏 md中屏 sm小屏 xs超小型*/
+  --fontSize-lg: 3.2rem;
+  --fontSize-md: 1.8rem;
+  --fontSize-sm: 1.6rem;
+  --fontSize-xs: 1.4rem;
+
   /* a element hover color(a元素悬浮色) */
   --link-color: var(--color-primary);
 
@@ -19,9 +25,5 @@
 
   /* header variable */
   --header-height: 6rem;
-  --header-boxShadow: 1px 1px solid var(--color-dark);
-
-  /* footer variable */
-  --footer-height: 10rem;
-  --footer-boxShadow: var(--header-boxShadow);
+  --header-boxShadow: 0 -0.1rem .3rem var(--color-dark);
 }
