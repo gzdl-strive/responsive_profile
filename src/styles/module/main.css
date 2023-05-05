@@ -6,14 +6,17 @@
 /* || base */
 .base__content {
   grid-template-columns: max-content 1fr 1fr;
-  column-gap: 3.2rem;
   padding-top: 8.8rem;
   align-items: center;
 }
 
 .base__social {
   grid-template-columns: max-content;
-  row-gap: 1.6rem;
+}
+
+.iconfont.base__icon {
+  font-size: var(--iconSize-small);
+  color: var(--theme-color);
 }
 
 .base__title {
@@ -36,4 +39,10 @@
 
 .base__img {
   text-align: center;
+  order: 1;
+}
+
+.base__img img {
+  width: 70%;
+  transition: width 0.6s ease-in-out;
 }

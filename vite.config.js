@@ -1,12 +1,18 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 
 export default defineConfig({
   server: {
     port: 8889,
     open: true
   },
+  resolve: {
+    alias: {
+      "@s": path.resolve(__dirname, './src/scripts')
+    }
+  },
   build: {
-    outDir: 'dist',
+    outDir: "dist",
     sourcemap: false,
     rollupOptions: {
       output: {

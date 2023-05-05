@@ -7,34 +7,57 @@
     <meta name="description" content="This website is built for responsive learning and includes personal experiences and works." />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="src/styles/index.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_mx4uk8uo9js.css">
     <title>gzdl-strive's profile</title>
   </head>
   <body> 
     <!-- ** header ** -->
     <header class="header">
       <nav class="nav container flex between_center">
+        <!-- logo -->
         <a href="javascript:void(0);" class="nav__logo">
           gzdl-strive
         </a>
-        <!-- nav -->
+        <!-- nav list-->
         <div class="nav__menu">
-          <ul class="nav__list gap-3-2 flex">
+          <ul class="nav__list gap-col-3-2 flex">
             <li class="nav__item">
-              <a href="#base" class="nav__link">base</a>
+              <a href="#base" class="nav__link flex gap-row-1 column center_center">
+                <i class="iconfont icon-base nav__icon"></i>
+                <span>base</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#about" class="nav__link">about</a>
+              <a href="#about" class="nav__link flex gap-row-1 column center_center">
+                <i class="iconfont icon-smile nav__icon"></i>
+                <span>about</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#skill" class="nav__link">skill</a>
+              <a href="#skill" class="nav__link flex gap-row-1 column center_center">
+                <i class="iconfont icon-film nav__icon"></i>
+                <span>skill</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#profile" class="nav__link">profile</a>
+              <a href="#profile" class="nav__link flex gap-row-1 column center_center">
+                <i class="iconfont icon-picture nav__icon"></i>
+                <span>profile</span>
+              </a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link">contact</a>
+              <a href="#contact" class="nav__link flex gap-row-1 column center_center">
+                <i class="iconfont icon-contact nav__icon"></i>
+                <span>contact</span>
+              </a>
             </li>
           </ul>
+          <i class="iconfont icon-cancel_expand nav__close"></i>
+        </div>
+
+        <!-- sm screen nav-menu -->
+        <div class="nav__btns">
+          <i class="iconfont icon-expand nav__btn--toggle"></i>
         </div>
       </nav>
     </header>
@@ -43,11 +66,20 @@
       <!-- base -->
       <section id="base" class="base section">
         <div class="base__container container">
-          <div class="base__content grid">
-            <div class="base__social grid">
-              <a href="javascript:void(0);">icon1</a>
-              <a href="javascript:void(0);">icon2</a>
-              <a href="javascript:void(0);">icon3</a>
+          <div class="base__content grid gap-col-3-2">
+            <div class="base__social grid gap-row-1-6">
+              <a href="javascript:void(0);">
+                <i class="iconfont icon-github base__icon"></i>
+              </a>
+              <a href="javascript:void(0);">
+                <i class="iconfont icon-gitee base__icon"></i>
+              </a>
+              <a href="javascript:void(0);">
+                <i class="iconfont icon-bilibili base__icon"></i>
+              </a>
+            </div>
+            <div class="base__img">
+              <img src="/logo.svg" />
             </div>
             <div class="base__data">
               <h2 class="base__title">Hi, I'm <br />gzdl-strive</h2>
@@ -60,9 +92,6 @@
                 contact me
                 <span>icon</span>
               </a>
-            </div>
-            <div class="base__img">
-              <img src="/logo.svg" width="80%" />
             </div>
           </div>
           <!-- scroll -->
@@ -85,13 +114,13 @@
     <!-- ** footer ** -->
     <footer class="footer">
       <div class="footer__bg">
-        <div class="footer__container container grid gap-3-2">
+        <div class="footer__container container grid gap-col-3-2">
           <div>
             <h2 class="footer__title">GZDLPROFILE</h2>
             <h3 class="footer__subtitle">Frontend Developer</h3>
           </div>
 
-          <ul class="footer__links flex center_center gap-3-2">
+          <ul class="footer__links flex center_center gap-col-3-2">
             <li>
               <a href="#base" class="footer__link">base</a>
             </li>
@@ -104,9 +133,15 @@
           </ul>
 
           <div class="footer__socials">
-            <a href="javascript:void(0);" class="footer__social">icon1</a>
-            <a href="javascript:void(0);" class="footer__social">icon2</a>
-            <a href="javascript:void(0);" class="footer__social">icon3</a>
+            <a href="javascript:void(0);" class="footer__social">
+              <i class="iconfont icon-github footer__icon"></i>
+            </a>
+            <a href="javascript:void(0);" class="footer__social">
+              <i class="iconfont icon-gitee footer__icon"></i>
+            </a>
+            <a href="javascript:void(0);" class="footer__social">
+              <i class="iconfont icon-bilibili footer__icon"></i>
+            </a>
           </div>
         </div>
 

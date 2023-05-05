@@ -1,4 +1,5 @@
-/* header style */
+/* header style(头部导航栏样式) */
+/* 使用固定定位，当屏幕为小尺寸时，修改导航栏位置到底部，并收缩菜单 */
 .header {
   height: var(--header-height);
   width: 100%;
@@ -6,9 +7,10 @@
   top: 0;
   left: 0;
   background-color: var(--color-light);
+  z-index: var(--header-zIndex);
   transition: all .3s linear;
 }
-
+/* 滚动状态下,header样式 */
 .header--scroll {
   box-shadow: var(--header-boxShadow);
 }
@@ -27,9 +29,48 @@
 
 .nav__menu {
   margin-left: auto;
+  transition: all 0.2s ease-out;
 }
 
 .nav__link {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   text-transform: capitalize;
+}
+
+.nav__close {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: var(--theme-color);
+  opacity: 0.9;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+.nav__close:hover {
+  color: var(--link-color);
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+/* need cover iconfont-style */
+.iconfont.nav__btn--toggle {
+  font-size: var(--iconSize-large);
+}
+
+.iconfont.nav__icon,
+.iconfont.nav__close {
+  font-size: var(--iconSize-small);
+}
+
+.nav__btn--toggle:hover {
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+.nav__btn--toggle,
+.nav__icon,
+.nav__close {
+  display: none;
 }

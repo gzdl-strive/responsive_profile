@@ -5,7 +5,7 @@
 
 /* footer background */
 .footer__bg {
-  background-color: var(--color-purple);
+  background-color: var(--theme-color);
   color: var(--color-light);
   padding: 4.8rem 0 5.6rem;
 }
@@ -37,14 +37,21 @@
 }
 
 .footer__socials {
-  text-align: center;
   line-height: 4;
+  text-align: center;
 }
 
 .footer__social {
   font-size: 1.4rem;
   color: var(--color-light);
-  margin: 0 1rem;
+}
+
+.footer__social:nth-child(n + 2) {
+  margin-left: 1rem;
+}
+
+.iconfont.footer__icon {
+  font-size: var(--iconSize-normal);
 }
 
 .footer__copy {
