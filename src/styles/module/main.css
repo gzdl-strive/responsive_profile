@@ -46,3 +46,8 @@
   width: 70%;
   transition: width 0.6s ease-in-out;
 }
+
+.base__img img:hover {
+  cursor: pointer;
+  animation: rotateZ 1.5s ease infinite;
+}

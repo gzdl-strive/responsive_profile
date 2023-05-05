@@ -1,5 +1,6 @@
 @import url("common/reset.css"); /* import reset style(修改默认样式) */
 @import url("common/public.css"); /* import public style(公共、通用样式) */
+@import url("common/animation.css"); /* import animation style(通用动画样式)*/
 @import url("module/header.css"); /* import header style(头部样式) */
 @import url("module/main.css"); /* import main style(主内容样式) */
 @import url("module/footer.css"); /* import footer style(页脚样式) */
