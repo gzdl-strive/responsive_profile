@@ -1,0 +1,13 @@
+{
+  "nav__base": "基础",
+  "nav__about": "关于",
+  "nav__skill": "技能",
+  "nav__profile": "概述",
+  "nav__contact": "联系",
+  "nav__translate": "翻译",
+
+  "base__title": "你好，我是",
+  "base__subtitle": "前端开发",
+  "base__description": "在网页设计和开发知识方面具有高级经验，生产高质量的工作。",
+  "base__contact": "联系我"
+}

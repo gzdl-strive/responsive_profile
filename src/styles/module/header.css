@@ -1,32 +1,33 @@
 /* header style(头部导航栏样式) */
-/* 使用固定定位，当屏幕为小尺寸时，修改导航栏位置到底部，并收缩菜单 */
 .header {
   height: var(--header-height);
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
-  background-color: var(--color-light);
+  background-color: var(--theme-bgColor);
   z-index: var(--header-zIndex);
   transition: all .3s linear;
 }
-/* 滚动状态下,header样式 */
+/* scroll status, header style(滚动状态下,header样式) */
 .header--scroll {
   box-shadow: var(--header-boxShadow);
 }
 
+/* nav style(导航样式) */
 .nav {
   max-width: 968px;
   height: var(--header-height);
 }
-
+/* nav logo(导航logo) */
 .nav__logo {
   font-size: 1.6rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .05rem;
+  color: var(--theme-textColor);
 }
-
+/* nav menu(main) 导航(菜单/主体)内容 */
 .nav__menu {
   margin-left: auto;
   transition: all 0.2s ease-out;
@@ -35,6 +36,32 @@
 .nav__link {
   font-size: 1.4rem;
   text-transform: capitalize;
+  color: var(--theme-textColor);
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:hover .nav__language {
+  color: var(--link-color);
+}
+
+/* need cover iconfont-style */
+.iconfont.nav__btn--toggle {
+  font-size: var(--iconSize-large);
+  color: var(--theme-textColor);
+}
+
+.iconfont.nav__icon,
+.iconfont.nav__language,
+.iconfont.nav__btn--theme {
+  font-size: var(--iconSize-small);
+  color: var(--theme-textColor);
+}
+
+.nav__btn--toggle:hover,
+.nav__language:hover,
+.nav__btn--theme:hover {
+  cursor: pointer;
+  color: var(--link-color);
 }
 
 .nav__close {
@@ -47,6 +74,10 @@
   transition: all 0.2s ease-in;
 }
 
+.iconfont.nav__close {
+  font-size: var(--iconSize-normal);
+}
+
 .nav__close:hover {
   color: var(--link-color);
   cursor: pointer;
@@ -55,23 +86,9 @@
   transform: rotateZ(180deg);
 }
 
-/* need cover iconfont-style */
-.iconfont.nav__btn--toggle {
-  font-size: var(--iconSize-large);
-}
-
-.iconfont.nav__icon,
-.iconfont.nav__close {
-  font-size: var(--iconSize-small);
-}
-
-.nav__btn--toggle:hover {
-  cursor: pointer;
-  color: var(--link-color);
-}
-
 .nav__btn--toggle,
 .nav__icon,
+.nav__languageText,
 .nav__close {
   display: none;
 }

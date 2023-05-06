@@ -7,7 +7,8 @@
   --color-purple: #6a58d8;
   --color-info: #909399;
   --color-light: #ffffff;
-  --color-dark: #333333;
+  --color-dark: #191627;
+  --color-deepDark: #100e1b;
   --color-lightGray: #a19fac;
   --color-gray: #707070;
   --color-deepGray: #4e4d4d;
@@ -29,6 +30,15 @@
   /* theme color */
   --theme-color: var(--color-purple);
 
+  /* theme-main-background-color */
+  --theme-bgColor: var(--color-light);
+  /* theme-footer-background-color */
+  --theme-footer-bgColor: var(--theme-color);
+  /* theme-main-text-color */
+  --theme-textColor: var(--color-dark); 
+  /* theme-subtitle-text-color */
+  --theme-subtitle-textColor: var(--color-deepGray);
+
   /* header,main,footer */
   --layout-padding: 0 1.6rem;
 
@@ -38,4 +48,11 @@
   /* header variable */
   --header-height: 6rem;
   --header-boxShadow: 0 -0.1rem .3rem var(--color-dark);
+}
+
+body.dark-theme {
+  --theme-bgColor: var(--color-dark);
+  --theme-footer-bgColor: var(--color-deepDark);
+  --theme-textColor: var(--color-light);
+  --theme-subtitle-textColor: var(--color-lightGray);
 }

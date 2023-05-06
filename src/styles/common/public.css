@@ -33,6 +33,10 @@
 }
 
 /* gap */
+.gap-col-1-5 {
+  column-gap: 1.5rem;
+}
+
 .gap-col-3-2 {
   column-gap: 3.2rem;
 }

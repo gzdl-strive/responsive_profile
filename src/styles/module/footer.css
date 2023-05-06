@@ -1,13 +1,9 @@
-/* footer style */
-.footer {
-  margin-top: 3.2rem;
-}
-
 /* footer background */
 .footer__bg {
-  background-color: var(--theme-color);
+  background-color: var(--theme-footer-bgColor);
   color: var(--color-light);
-  padding: 4.8rem 0 5.6rem;
+  padding: 6.8rem 0 5.6rem;
+  transition: background-color 0.3s linear;
 }
 
 /* footer content container */
@@ -55,7 +51,7 @@
 }
 
 .footer__copy {
-  margin-top: 7.2rem;
+  margin-top: 5rem;
   text-align: center;
   font-size: 1.2rem;
   color: var(--color-lightGray);

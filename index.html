@@ -7,13 +7,13 @@
     <meta name="description" content="This website is built for responsive learning and includes personal experiences and works." />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="src/styles/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_mx4uk8uo9js.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_15vzcesl2yc.css">
     <title>gzdl-strive's profile</title>
   </head>
   <body> 
     <!-- ** header ** -->
     <header class="header">
-      <nav class="nav container flex between_center">
+      <nav class="nav container flex gap-col-1-5 between_center">
         <!-- logo -->
         <a href="javascript:void(0);" class="nav__logo">
           gzdl-strive
@@ -21,34 +21,40 @@
         <!-- nav list-->
         <div class="nav__menu">
           <ul class="nav__list gap-col-3-2 flex">
-            <li class="nav__item">
+            <li class="nav__item flex center_center">
               <a href="#base" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-base nav__icon"></i>
-                <span>base</span>
+                <span data-i18n="nav__base">base</span>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item flex center_center">
               <a href="#about" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-smile nav__icon"></i>
-                <span>about</span>
+                <span data-i18n="nav__about">about</span>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item flex center_center">
               <a href="#skill" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-film nav__icon"></i>
-                <span>skill</span>
+                <span data-i18n="nav__skill">skill</span>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item flex center_center">
               <a href="#profile" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-picture nav__icon"></i>
-                <span>profile</span>
+                <span data-i18n="nav__profile">profile</span>
               </a>
             </li>
-            <li class="nav__item">
+            <li class="nav__item flex center_center">
               <a href="#contact" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-contact nav__icon"></i>
-                <span>contact</span>
+                <span data-i18n="nav__contact">contact</span>
+              </a>
+            </li>
+            <li class="nav__item flex center_center">
+              <a class="nav__link nav__languageContainer flex gap-row-1 column center_center">
+                <i class="iconfont icon-En2Cn nav__language"></i>
+                <span class="nav__languageText" data-i18n="nav__translate">translate</span>
               </a>
             </li>
           </ul>
@@ -56,7 +62,8 @@
         </div>
 
         <!-- sm screen nav-menu -->
-        <div class="nav__btns">
+        <div class="nav__btns flex center_center gap-col-1-5">
+          <i class="iconfont icon-light-mode icon-dark-mode nav__btn--theme" title="dark theme"></i>
           <i class="iconfont icon-expand nav__btn--toggle"></i>
         </div>
       </nav>
@@ -82,15 +89,15 @@
               <img src="/logo.svg" />
             </div>
             <div class="base__data">
-              <h2 class="base__title">Hi, I'm <br />gzdl-strive</h2>
-              <h3 class="base__subtitle">Frontend Developer</h3>
-              <p class="base__description">
+              <h2 class="base__title"><span data-i18n="base__title">Hi, I'm</span> <br />gzdl-strive</h2>
+              <h3 class="base__subtitle" data-i18n="base__subtitle">Frontend Developer</h3>
+              <p class="base__description" data-i18n="base__description">
                 High level experience in web design and development knowledge,
                 producing quality work.
               </p>
               <a href="#contact" class="btn">
-                contact me
-                <span>icon</span>
+                <span data-i18n="base__contact">contact me</span>
+                <i class="iconfont icon-contact base__contactIcon"></i>
               </a>
             </div>
           </div>
