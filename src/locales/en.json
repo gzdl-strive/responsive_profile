@@ -1,13 +1,25 @@
 {
   "nav__base": "base",
   "nav__about": "about",
-  "nav__skill": "skill",
+  "nav__skills": "skills",
   "nav__profile": "profile",
   "nav__contact": "contact",
   "nav__translate": "translate",
+  "nav__btn--theme": "switch theme",
+  "nav__btn--eyeProtection": "eye protection mode",
+  "nav__btn--toggle": "expand nav menu",
 
   "base__title": "Hi, I'm",
   "base__subtitle": "Frontend Developer",
   "base__description": "High level experience in web design and development knowledge, producing quality work.",
-  "base__contact": "contact me"
+  "base__contact": "contact me",
+  "base__scroll": "scroll down",
+
+  "footer__subtitle": "Frontend Developer",
+  "footer__base": "base",
+  "footer__skills": "skills",
+  "footer__profile": "profile",
+
+  "base__icon--gitee": "gitee",
+  "base__icon--bilibili": "bilibili"
 }

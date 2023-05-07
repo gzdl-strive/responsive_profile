@@ -63,3 +63,13 @@ const languageMap = {
 };
 languageMap.initLanguage();
 languageChangeContainer.addEventListener('click', languageMap.changeLanguage);
+
+// eye protection
+const eyeProtectionContainer = document.querySelector('.eyeProtection');
+const eyeProtectionBtn = document.querySelector('.nav__btn--eyeProtection');
+let curEyeStatus = false;
+eyeProtectionBtn.addEventListener('click', () => {
+  eyeProtectionContainer.style.display = !curEyeStatus ? 'block' : 'none';
+  eyeProtectionBtn.style.color = !curEyeStatus ? 'orange' : '';
+  curEyeStatus = !curEyeStatus;
+});

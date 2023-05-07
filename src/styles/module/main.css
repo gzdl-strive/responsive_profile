@@ -56,9 +56,40 @@
 
 .base__img img:hover {
   cursor: pointer;
-  animation: rotateZ 1.5s ease;
+  animation: 1.5s ease rotateZ;
 }
 
 .iconfont.base__contactIcon {
   font-size: var(--iconSize-small);
+}
+
+.base__scroll {
+  width: 100%;
+  padding: 3rem 0 0 5rem;
+}
+
+.base__scroll--btn {
+  transition: transform 0.3s ease-out;
+  font-size: var(--fontSize-sm);
+  color: var(--theme-textColor);
+}
+
+.iconfont.base__scroll--icon {
+  font-size: var(--iconSize-small);
+  color: var(--theme-color);
+  transition: color 0.2s ease-out; 
+}
+
+.base__scroll--btn:hover {
+  transform: translateY(.5rem);
+  transform: scale(1.05);
+}
+
+.base__scroll--btn:hover .base__scroll--icon {
+  color: var(--link-color);
+}
+
+.base__scroll--btn:hover .base__scroll--icon:nth-of-type(2) {
+  /* duration easing-function delay iteration-count name */
+  animation: 1s linear 0.5s infinite scrollDown;
 }

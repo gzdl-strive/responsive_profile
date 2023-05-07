@@ -31,6 +31,9 @@
   .base__description {
     margin-bottom: 2rem;
   }
+  .base__scroll {
+    padding-left: 0;
+  }
   /* footer */
   .footer__links {
     flex-direction: column;

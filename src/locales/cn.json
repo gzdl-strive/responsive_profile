@@ -1,13 +1,25 @@
 {
   "nav__base": "基础",
   "nav__about": "关于",
-  "nav__skill": "技能",
+  "nav__skills": "技能",
   "nav__profile": "概述",
   "nav__contact": "联系",
   "nav__translate": "翻译",
+  "nav__btn--theme": "主题切换",
+  "nav__btn--eyeProtection": "护眼模式",
+  "nav__btn--toggle": "展开导航栏",
 
   "base__title": "你好，我是",
   "base__subtitle": "前端开发",
   "base__description": "在网页设计和开发知识方面具有高级经验，生产高质量的工作。",
-  "base__contact": "联系我"
+  "base__contact": "与我联系",
+  "base__scroll": "往下滚动",
+
+  "footer__subtitle": "前端开发",
+  "footer__base": "基础",
+  "footer__skills": "技能",
+  "footer__profile": "概述",
+
+  "icon--gitee": "码云",
+  "icon--bilibili": "B站"
 }

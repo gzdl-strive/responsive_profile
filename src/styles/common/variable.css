@@ -12,6 +12,7 @@
   --color-lightGray: #a19fac;
   --color-gray: #707070;
   --color-deepGray: #4e4d4d;
+  --color-eyeProtection: #cce8cf;
 
   /* font size: lg大屏 md中屏 sm小屏 xs超小型*/
   --fontSize-lg: 3.2rem;
@@ -44,6 +45,7 @@
 
   /* z-index */
   --header-zIndex: 10;
+  --eyeProtection-zIndex: 99;
 
   /* header variable */
   --header-height: 6rem;

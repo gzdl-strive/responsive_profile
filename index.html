@@ -7,7 +7,7 @@
     <meta name="description" content="This website is built for responsive learning and includes personal experiences and works." />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="src/styles/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_15vzcesl2yc.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_rlcvpq5jzp.css">
     <title>gzdl-strive's profile</title>
   </head>
   <body> 
@@ -16,7 +16,7 @@
       <nav class="nav container flex gap-col-1-5 between_center">
         <!-- logo -->
         <a href="javascript:void(0);" class="nav__logo">
-          gzdl-strive
+          gzdlprofile
         </a>
         <!-- nav list-->
         <div class="nav__menu">
@@ -34,9 +34,9 @@
               </a>
             </li>
             <li class="nav__item flex center_center">
-              <a href="#skill" class="nav__link flex gap-row-1 column center_center">
+              <a href="#skills" class="nav__link flex gap-row-1 column center_center">
                 <i class="iconfont icon-film nav__icon"></i>
-                <span data-i18n="nav__skill">skill</span>
+                <span data-i18n="nav__skills">skills</span>
               </a>
             </li>
             <li class="nav__item flex center_center">
@@ -63,10 +63,13 @@
 
         <!-- sm screen nav-menu -->
         <div class="nav__btns flex center_center gap-col-1-5">
-          <i class="iconfont icon-light-mode icon-dark-mode nav__btn--theme" title="dark theme"></i>
-          <i class="iconfont icon-expand nav__btn--toggle"></i>
+          <i class="iconfont icon-light-mode icon-dark-mode nav__btn--theme" data-i18n-icon="nav__btn--theme" title="switch theme"></i>
+          <i class="iconfont icon-eye nav__btn--eyeProtection" data-i18n-icon="nav__btn--eyeProtection" title="eye protection mode"></i>
+          <i class="iconfont icon-expand nav__btn--toggle" data-i18n-icon="nav__btn--toggle" title="expand nav menu"></i>
         </div>
       </nav>
+      <!-- ** eye protection ** -->
+      <div class="eyeProtection"></div>
     </header>
     <!-- ** main-content ** -->
     <main class="main">
@@ -76,17 +79,17 @@
           <div class="base__content grid gap-col-3-2">
             <div class="base__social grid gap-row-1-6">
               <a href="javascript:void(0);">
-                <i class="iconfont icon-github base__icon"></i>
+                <i class="iconfont icon-github base__icon" title="github"></i>
               </a>
               <a href="javascript:void(0);">
-                <i class="iconfont icon-gitee base__icon"></i>
+                <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon--gitee" title="gitee"></i>
               </a>
               <a href="javascript:void(0);">
-                <i class="iconfont icon-bilibili base__icon"></i>
+                <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon--bilibili" title="bilibili"></i>
               </a>
             </div>
             <div class="base__img">
-              <img src="/logo.svg" />
+              <img src="/logo.svg" alt="vitv-admin logo" />
             </div>
             <div class="base__data">
               <h2 class="base__title"><span data-i18n="base__title">Hi, I'm</span> <br />gzdl-strive</h2>
@@ -102,12 +105,19 @@
             </div>
           </div>
           <!-- scroll -->
-          <!-- <div class="base__scroll"></div> -->
+          <div class="base__scroll">
+            <a href="#about" class="base__scroll--btn inline-flex start_center gap-col-1">
+              <i class="iconfont icon-mouse base__scroll--icon"></i>
+              <span data-i18n="base__scroll">scroll down</span>
+              <i class="iconfont icon-scrollDown base__scroll--icon"></i>
+            </a>
+          </div>
         </div>
       </section>
 
       <!-- about -->
-      <!-- <section id="about" class="about"></section> -->
+      <section id="about" class="about section">
+      </section>
 
       <!-- skills -->
       <!-- <section id="skills" class="skills"></section> -->
@@ -124,30 +134,30 @@
         <div class="footer__container container grid gap-col-3-2">
           <div>
             <h2 class="footer__title">GZDLPROFILE</h2>
-            <h3 class="footer__subtitle">Frontend Developer</h3>
+            <h3 class="footer__subtitle" data-i18n="footer__subtitle">Frontend Developer</h3>
           </div>
 
           <ul class="footer__links flex center_center gap-col-3-2">
             <li>
-              <a href="#base" class="footer__link">base</a>
+              <a href="#base" class="footer__link" data-i18n="footer__base">base</a>
             </li>
             <li>
-              <a href="#skills" class="footer__link">skills</a>
+              <a href="#skills" class="footer__link" data-i18n="footer__skills">skills</a>
             </li>
             <li>
-              <a href="#profile" class="footer__link">profile</a>
+              <a href="#profile" class="footer__link" data-i18n="footer__profile">profile</a>
             </li>
           </ul>
 
           <div class="footer__socials">
             <a href="javascript:void(0);" class="footer__social">
-              <i class="iconfont icon-github footer__icon"></i>
+              <i class="iconfont icon-github footer__icon" title="github"></i>
             </a>
             <a href="javascript:void(0);" class="footer__social">
-              <i class="iconfont icon-gitee footer__icon"></i>
+              <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon--gitee" title="gitee"></i>
             </a>
             <a href="javascript:void(0);" class="footer__social">
-              <i class="iconfont icon-bilibili footer__icon"></i>
+              <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon--bilibili" title="bilibili"></i>
             </a>
           </div>
         </div>
