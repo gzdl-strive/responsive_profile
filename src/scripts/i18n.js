@@ -1,6 +1,9 @@
 import en from '../locales/en.json';
 import cn from '../locales/cn.json';
 
+// Custom line breaks(匹配自定义换行符)
+const lineBreakReg = /@\/\/n/g;
+
 // resource map(资源对象)
 const resources = {
   en,
@@ -39,7 +42,12 @@ function changeElements(lang, type, customKey) {
  * @param {string} val 
  */
 function changeElementByType(type, element, lang, val) {
-  element[type] = resources[lang][val] || element[type] || val;
+  let t_val = resources[lang][val];
+  if (t_val && lineBreakReg.test(t_val)) {
+    element.innerHTML = t_val.replace(lineBreakReg, '<br />');
+  } else {
+    element[type] = t_val || element[type] || val;
+  }
 }
 
 export {

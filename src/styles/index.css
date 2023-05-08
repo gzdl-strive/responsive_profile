@@ -86,11 +86,14 @@
     text-align: center;
   }
   /* main-about */
-  .about__content {
+  .about__container {
     grid-template-columns: 1fr;
   }
   .about__data {
     row-gap: 2rem;
+  }
+  .about__data .about__infos {
+    justify-content: space-around;
   }
   .about__btn {
     justify-content: center;

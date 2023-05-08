@@ -1,5 +1,6 @@
 @import url("main/base.css");
 @import url("main/about.css");
+@import url("main/skills.css");
 
 /* main style */
 .main {
@@ -10,4 +11,28 @@
 /* main section style */
 .section {
   padding: 9.6rem 0 3.2rem;
+}
+
+/* section public style */
+.about__title,
+.skills__title,
+.profile__title,
+.contact__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fontSize-md);
+  color: var(--theme-textColor);
+  letter-spacing: 0.1rem;
+  margin-bottom: var(--mb-1);
+}
+
+.about__subtitle,
+.skills__subtitle,
+.profile__subtitle,
+.contact__subtitle {
+  text-align: center;
+  font-size: var(--fontSize-sm);
+  font-weight: 100;
+  color: var(--theme-subtitle-textColor);
+  margin-bottom: var(--mb-3);
 }

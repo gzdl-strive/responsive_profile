@@ -7,7 +7,7 @@
     <meta name="description" content="This website is built for responsive learning and includes personal experiences and works." />
     <link rel="icon" type="image/svg+xml" href="/logo.svg" />
     <link rel="stylesheet" href="src/styles/index.css">
-    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_ljvfc0vpghk.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_nfp0gqdqmv9.css">
     <title>gzdl-strive's profile</title>
   </head>
   <body> 
@@ -82,10 +82,10 @@
                 <i class="iconfont icon-github base__icon" title="github"></i>
               </a>
               <a href="javascript:void(0);">
-                <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon--gitee" title="gitee"></i>
+                <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon-gitee" title="gitee"></i>
               </a>
               <a href="javascript:void(0);">
-                <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon--bilibili" title="bilibili"></i>
+                <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon-bilibili" title="bilibili"></i>
               </a>
             </div>
             <div class="base__img">
@@ -100,7 +100,7 @@
               </p>
               <a href="#contact" class="btn">
                 <span data-i18n="base__contact">contact me</span>
-                <i class="iconfont icon-contact base__contactIcon"></i>
+                <i class="iconfont icon-contact base__contact--icon"></i>
               </a>
             </div>
           </div>
@@ -119,29 +119,29 @@
       <section id="about" class="about section">
         <h2 class="about__title" data-i18n="about__title">about me</h2>
         <h3 class="about__subtitle" data-i18n="about__subtitle">my introduction</h3>
-        <div class="about__content container grid gap-col-3-2 gap-row-2">
+        <div class="about__container container grid gap-col-3-2 gap-row-2">
           <img src="./src/assets/images/about.png" class="about__img" alt="">
           <div class="about__data flex column gap-row-4">
-            <p class="about__description">
+            <p class="about__description" data-i18n="about__description">
               Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.
             </p>
             <ul class="about__infos flex between_center gap-col-1">
               <li class="about__info flex column">
                 <span class="about__info--num">02+</span>
-                <span class="about__info--name">years of <br />experience</span>
+                <span class="about__info--name" data-i18n="about__workExperience">years of <br />experience</span>
               </li>
               <li class="about__info flex column">
                 <span class="about__info--num">03+</span>
-                <span class="about__info--name">completed<br /> projects</span>
+                <span class="about__info--name" data-i18n="about__completedProject">completed<br /> projects</span>
               </li>
               <li class="about__info flex column">
                 <span class="about__info--num">01+</span>
-                <span class="about__info--name">companies<br /> worked</span>
+                <span class="about__info--name" data-i18n="about__conpanyWorked">companies<br /> worked</span>
               </li>
             </ul>
             <div class="about__btn flex">
               <a href="logo.svg" class="btn" download="">
-                download cv
+                <span data-i18n="about__downloadResume">resume</span>
                 <i class="iconfont icon-download about__btn--download"></i>
               </a>
             </div>
@@ -150,13 +150,37 @@
       </section>
 
       <!-- skills -->
-      <!-- <section id="skills" class="skills section"></section> -->
+      <section id="skills" class="skills section">
+        <h2 class="skills__title">skills</h2>
+        <h3 class="skills__subtitle">my technical level</h3>
+        <div class="skills__container container">
+          <div class="skill__content">
+            <div class="skill__header">
+              <i class="iconfont icon-frontend"></i>
+              <div>
+                <h3 class="skill__title">frontend developer</h3>
+                <h4 class="skill__subtitle">more then * years</h4>
+              </div>
+              <span class="skill__icon--arrowup"></span>
+            </div>
+            <div class="skill__list">
+              <div class="skill__item">
+                <div class="skill__data">
+                  <h4 class="skill__name"></h4>
+                  <span class="skill__num"></span>
+                </div>
+                <div class="skill__percent"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       <!-- profile -->
-      <!-- <section id="profile" class="profile section"></section> -->
+      <section id="profile" class="profile section"></section>
 
       <!-- contact -->
-      <!-- <section id="contact" class="contact section"></section> -->
+      <section id="contact" class="contact section"></section>
     </main>
     <!-- ** footer ** -->
     <footer class="footer">
@@ -184,10 +208,10 @@
               <i class="iconfont icon-github footer__icon" title="github"></i>
             </a>
             <a href="javascript:void(0);" class="footer__social">
-              <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon--gitee" title="gitee"></i>
+              <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon-gitee" title="gitee"></i>
             </a>
             <a href="javascript:void(0);" class="footer__social">
-              <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon--bilibili" title="bilibili"></i>
+              <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon-bilibili" title="bilibili"></i>
             </a>
           </div>
         </div>

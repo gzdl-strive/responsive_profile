@@ -1,22 +1,5 @@
 /* || about */
-.about__title {
-  text-align: center;
-  text-transform: capitalize;
-  font-size: var(--fontSize-md);
-  color: var(--theme-textColor);
-  letter-spacing: 0.1rem;
-  margin-bottom: var(--mb-1);
-}
-
-.about__subtitle {
-  text-align: center;
-  font-size: var(--fontSize-sm);
-  font-weight: 100;
-  color: var(--theme-subtitle-textColor);
-  margin-bottom: var(--mb-3);
-}
-
-.about__content {
+.about__container {
   grid-template-columns: repeat(2, 1fr);
 }
 
@@ -52,6 +35,10 @@
   font-size: var(--fontSize-xs);
   text-align: center;
   color: var(--theme-subtitle-textColor);
+}
+
+.about__info--name::first-letter {
+  text-transform: uppercase;
 }
 
 .iconfont.about__btn--download {
