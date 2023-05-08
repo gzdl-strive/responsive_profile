@@ -59,8 +59,16 @@
   row-gap: 1rem;
 }
 
+.gap-row-2 {
+  row-gap: 2rem;
+}
+
 .gap-row-1-6 {
   row-gap: 1.6rem;
+}
+
+.gap-row-4 {
+  row-gap: 4rem;
 }
 
 /* container */
@@ -77,5 +85,6 @@
   background-color: var(--theme-color);
   color: var(--color-light);
   border-radius: .8rem;
-  font-size: 1.8rem;
+  font-size: var(--fontSize-md);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }

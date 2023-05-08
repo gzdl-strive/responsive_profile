@@ -1,5 +1,5 @@
-import { defineConfig } from 'vite';
-import path from 'path';
+import { defineConfig } from "vite";
+import path from "path";
 
 export default defineConfig({
   server: {
@@ -8,7 +8,8 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@s": path.resolve(__dirname, './src/scripts')
+      "@s": path.resolve(__dirname, "./src/scripts"),
+      "@a": path.resolve(__dirname, "./src/assets")
     }
   },
   build: {

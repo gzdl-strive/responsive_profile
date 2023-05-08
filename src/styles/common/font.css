@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "DingTalk";
+  src: url("@a/fonts/DingTalk_JinBuTi_Regular.woff2") format("woff2"),
+       url("@a/fonts/DingTalk_JinBuTi_Regular.woff") format("woff"),
+       url("@a/fonts/DingTalk_JinBuTi_Regular.ttf") format("ttf");
+  font-display: swap;
+  font-weight: normal;
+  font-style: normal;
+}

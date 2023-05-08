@@ -1,0 +1,59 @@
+/* || about */
+.about__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fontSize-md);
+  color: var(--theme-textColor);
+  letter-spacing: 0.1rem;
+  margin-bottom: var(--mb-1);
+}
+
+.about__subtitle {
+  text-align: center;
+  font-size: var(--fontSize-sm);
+  font-weight: 100;
+  color: var(--theme-subtitle-textColor);
+  margin-bottom: var(--mb-3);
+}
+
+.about__content {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.about__img {
+  width: 30rem;
+  justify-self: center;
+  align-self: center;
+  transition: all 0.3s ease-out;
+}
+
+.about__img:hover {
+  border-radius: 1rem;
+  transform: rotateX(15deg) rotateY(10deg);
+}
+
+.about__data {
+  color: var(--theme-textColor);
+}
+
+.about__description {
+  font-family: 'Courier New', Courier, monospace, sans-serif;
+  font-size: var(--fontSize-sm);
+  color: var(--theme-subtitle-textColor);
+  text-indent: 2em;
+}
+
+.about__info--num {
+  font-size: var(--fontSize-md);
+  text-align: center;
+}
+
+.about__info--name {
+  font-size: var(--fontSize-xs);
+  text-align: center;
+  color: var(--theme-subtitle-textColor);
+}
+
+.iconfont.about__btn--download {
+  font-size: var(--iconSize-small);
+}

@@ -25,6 +25,12 @@
   --iconSize-normal: 2.5rem;
   --iconSize-small: 2rem;
 
+  /* Margin Bottom */
+  --mb-1: 1rem;
+  --mb-2: 2rem;
+  --mb-3: 3rem;
+  --mb-4: 4rem;
+
   /* a element hover color(a元素悬浮色) */
   --link-color: var(--color-primary);
 
