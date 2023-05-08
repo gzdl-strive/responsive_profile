@@ -1,4 +1,5 @@
 import { changeLanguage } from './i18n';
+import skillsMap from '@d/skills.json';
 
 // # nav
 const navToggle = document.querySelector('.nav__btn--toggle');
@@ -72,4 +73,52 @@ eyeProtectionBtn.addEventListener('click', () => {
   eyeProtectionContainer.style.display = !curEyeStatus ? 'block' : 'none';
   eyeProtectionBtn.style.color = !curEyeStatus ? 'orange' : '';
   curEyeStatus = !curEyeStatus;
+});
+
+
+// # main
+// ## skills
+const skillsContainer = document.querySelector('.skills__container');
+const skills = Object.keys(skillsMap);
+skills.length && skills.forEach(skill => {
+  const skillData = skillsMap[skill];
+  if (skillData.title) {
+    const { title, subtitle, headerIcon, defaultChecked, skillTree } = skillData;
+    const skillTreeList = Object.keys(skillTree);
+    const skillContent = document.createElement('div');
+    const skillList = document.createElement('div');
+    skillContent.setAttribute('class', 'skill__content');
+    skillList.setAttribute('class', 'skill_lists');
+    let list_str = '';
+    !defaultChecked && skillContent.classList.add('skill__content--close');
+    skillContent.innerHTML = `
+      <div class="skill__header flex gap-col-3-2">
+        <i class="iconfont ${headerIcon} skill__header--icon"></i>
+        <div>
+          <h3 class="skill__title">${title}</h3>
+          <p class="skill__subtitle">${subtitle}</p>
+        </div>
+        <span class="skill__icon--arrow"></span>
+      </div>
+    `;
+    skillTreeList.forEach(item => {
+      list_str += `
+        <div class="skill__list">
+          <div class="skill__item">
+            <div class="skill__data flex between_center">
+              <h4 class="skill__name">${item}</h4>
+              <span class="skill__num">${skillTree[item]}%</span>
+            </div>
+            <div class="skill__percent">
+              <div class="skill__percent--progress" style="width: ${skillTree[item]}%;"></div>
+            </div>
+          </div>
+        </div>
+      `;
+    });
+    skillList.innerHTML = list_str;
+    skillContent.append(skillList);
+    console.log(skillContent);
+    skillsContainer.append(skillContent);
+  }
 });

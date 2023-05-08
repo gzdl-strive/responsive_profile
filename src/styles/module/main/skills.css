@@ -1,7 +1,84 @@
 /* skills style */
-/* .skills__container{} */
+.skill__header {
+  align-items: center;
+  padding: 0 2rem;
+}
 
-/* .skill__content {
+.skill__header:hover {
+  cursor: pointer;
+}
 
-} */
+.iconfont.skill__header--icon {
+  font-size: var(--iconSize-hugeLarge);
+  color: var(--theme-color);
+}
 
+.skill__title {
+  font-size: var(--fontSize-sm);
+  color: var(--theme-textColor);
+  margin-bottom: var(--mb-1);
+}
+
+.skill__subtitle {
+  font-size: var(--fontSize-xs);
+  color: var(--theme-subtitle-textColor);
+}
+
+.skill__icon--arrow {
+  width: 0;
+  height: 0;
+  margin-left: auto;
+  /* border-width border-style border-color */
+  border: var(--iconSize-littleSmall) solid transparent;
+  border-top-width: 0;
+  border-bottom-color: var(--theme-color);
+}
+
+.skill__header:hover .skill__icon--arrow {
+  border-bottom-color: var(--link-color);
+}
+
+.skill__list {
+  padding: 0 2rem;
+}
+
+.skill__item {
+  margin: var(--mb-0-5) 0;
+}
+
+.skill__name {
+  margin: 1rem 0;
+  text-transform: uppercase;
+  font-size: var(--fontSize-sm);
+  color: var(--theme-textColor);
+}
+
+.skill__num {
+  font-size: var(--fontSize-sm);
+  color: var(--theme-subtitle-textColor);
+}
+
+.skill__percent {
+  height: 0.6rem;
+  background: var(--theme-subtitle-textColor);
+  border-radius: 1rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.skill__percent--progress {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--theme-color);
+  height: 1rem;
+}
+
+.skill__content--close .skill_lists{
+  display: none;
+}
+
+.skill__content--close .skill__icon--arrow {
+  transform: rotateZ(180deg);
+}

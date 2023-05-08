@@ -20,12 +20,15 @@
   --fontSize-sm: 1.6rem;
   --fontSize-xs: 1.4rem;
 
-  /* icon size large大图标 normal常规 small小图标*/
+  /* icon size hugeLarge超大图标 large大图标 normal常规 small小图标*/
+  --iconSize-hugeLarge: 4rem;
   --iconSize-large: 3rem;
   --iconSize-normal: 2.5rem;
   --iconSize-small: 2rem;
+  --iconSize-littleSmall: 1rem;
 
   /* Margin Bottom */
+  --mb-0-5: 0.5rem;
   --mb-1: 1rem;
   --mb-2: 2rem;
   --mb-3: 3rem;

@@ -47,6 +47,10 @@
   .about__img {
     width: 20rem;
   }
+  /* skill */
+  .iconfont.skill__header--icon {
+    font-size: var(--iconSize-large);
+  }
   /* footer */
   .footer {
     padding-bottom: var(--header-height);
