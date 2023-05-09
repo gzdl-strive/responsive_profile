@@ -1,6 +1,8 @@
 @import url("main/base.css");
 @import url("main/about.css");
 @import url("main/skills.css");
+@import url("main/experience.css");
+@import url("main/portfolio.css");
 
 /* main style */
 .main {
@@ -14,10 +16,7 @@
 }
 
 /* section public style */
-.about__title,
-.skills__title,
-.profile__title,
-.contact__title {
+.section__title {
   text-align: center;
   text-transform: capitalize;
   font-size: var(--fontSize-md);
@@ -26,10 +25,7 @@
   margin-bottom: var(--mb-1);
 }
 
-.about__subtitle,
-.skills__subtitle,
-.profile__subtitle,
-.contact__subtitle {
+.section__subtitle {
   text-align: center;
   font-size: var(--fontSize-sm);
   font-weight: 100;

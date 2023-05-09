@@ -12,11 +12,12 @@
       "jquery": 55,
       "vue": 45,
       "react": 40
-    }
+    },
+    "i18n": "frontend"
   },
   "backend": {
     "title": "backend developer",
-    "subtitle": "more than 0 years",
+    "subtitle": "learning...",
     "headerIcon": "icon-backend",
     "defaultChecked": false,
     "skillTree": {
@@ -24,6 +25,7 @@
       "express": 20,
       "websocket": 10,
       "mysql": 10
-    }
+    },
+    "i18n": "backend"
   }
 }

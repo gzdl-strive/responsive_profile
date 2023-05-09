@@ -32,6 +32,7 @@
   border: var(--iconSize-littleSmall) solid transparent;
   border-top-width: 0;
   border-bottom-color: var(--theme-color);
+  transition: transform 0.3s ease-out;
 }
 
 .skill__header:hover .skill__icon--arrow {
@@ -40,6 +41,7 @@
 
 .skill__list {
   padding: 0 2rem;
+  transition: all 0.3s ease-out;
 }
 
 .skill__item {
@@ -51,16 +53,18 @@
   text-transform: uppercase;
   font-size: var(--fontSize-sm);
   color: var(--theme-textColor);
+  user-select: none;
 }
 
 .skill__num {
   font-size: var(--fontSize-sm);
   color: var(--theme-subtitle-textColor);
+  user-select: none;
 }
 
 .skill__percent {
   height: 0.6rem;
-  background: var(--theme-subtitle-textColor);
+  background: var(--color-lightPurple);
   border-radius: 1rem;
   position: relative;
   overflow: hidden;

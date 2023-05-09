@@ -10,7 +10,8 @@ export default defineConfig({
     alias: {
       "@a": path.resolve(__dirname, "./src/assets"),
       "@d": path.resolve(__dirname, "./src/data"),
-      "@s": path.resolve(__dirname, "./src/scripts")
+      "@s": path.resolve(__dirname, "./src/scripts"),
+      "@u": path.resolve(__dirname, "./src/utils")
     }
   },
   build: {

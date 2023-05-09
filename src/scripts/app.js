@@ -1,5 +1,10 @@
+import Swiper, { Navigation, Pagination, Mousewheel, Autoplay } from 'swiper';
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 import { changeLanguage } from './i18n';
 import skillsMap from '@d/skills.json';
+import { sibling } from '@u/getElement.js';
 
 // # nav
 const navToggle = document.querySelector('.nav__btn--toggle');
@@ -75,7 +80,6 @@ eyeProtectionBtn.addEventListener('click', () => {
   curEyeStatus = !curEyeStatus;
 });
 
-
 // # main
 // ## skills
 const skillsContainer = document.querySelector('.skills__container');
@@ -83,7 +87,7 @@ const skills = Object.keys(skillsMap);
 skills.length && skills.forEach(skill => {
   const skillData = skillsMap[skill];
   if (skillData.title) {
-    const { title, subtitle, headerIcon, defaultChecked, skillTree } = skillData;
+    const { title, subtitle, headerIcon, defaultChecked, skillTree, i18n } = skillData;
     const skillTreeList = Object.keys(skillTree);
     const skillContent = document.createElement('div');
     const skillList = document.createElement('div');
@@ -95,8 +99,8 @@ skills.length && skills.forEach(skill => {
       <div class="skill__header flex gap-col-3-2">
         <i class="iconfont ${headerIcon} skill__header--icon"></i>
         <div>
-          <h3 class="skill__title">${title}</h3>
-          <p class="skill__subtitle">${subtitle}</p>
+          <h3 class="skill__title" data-i18n="skill__title__${i18n}">${title}</h3>
+          <p class="skill__subtitle" data-i18n="skill__subtitle__${i18n}">${subtitle}</p>
         </div>
         <span class="skill__icon--arrow"></span>
       </div>
@@ -118,7 +122,60 @@ skills.length && skills.forEach(skill => {
     });
     skillList.innerHTML = list_str;
     skillContent.append(skillList);
-    console.log(skillContent);
     skillsContainer.append(skillContent);
   }
+});
+const skillHeaders = document.querySelectorAll('.skill__header');
+skillHeaders.forEach(skillHeader => {
+  skillHeader.addEventListener('click', () => {
+    const skillContent = skillHeader.parentElement;
+    if (skillContent.classList.contains('skill__content--close')) {
+      skillContent.classList.remove('skill__content--close');
+      const contentSiblings = sibling(skillContent);
+      contentSiblings.forEach(content => {
+        content.classList.add('skill__content--close');
+      });
+    } else {
+      skillContent.classList.add('skill__content--close');
+    }
+  });
+});
+
+// ## experience
+const experienceTabs = document.querySelectorAll('.experience__tab');
+const experienceContents = document.querySelector('.experience__contents').children;
+experienceTabs.forEach((experienceTab, idx) => {
+  experienceTab.addEventListener('click', () => {
+    if (!experienceTab.classList.contains('active')) {
+      experienceTab.classList.add('active');
+      experienceContents[idx].classList.remove('experience__content--close');
+      const siblings = sibling(experienceTab);
+      siblings.forEach(tab => {
+        tab.classList.remove('active');
+      });
+      const siblingContents = sibling(experienceContents[idx]);
+      siblingContents.forEach(content => {
+        content.classList.add('experience__content--close');
+      });
+    }
+  });
+});
+
+// ## portfolio
+new Swiper(".portfolio__swiper", {
+  modules: [Navigation, Pagination, Mousewheel, Autoplay],
+  loop: true,
+  mousewheel: true,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 });

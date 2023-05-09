@@ -51,6 +51,10 @@
   .iconfont.skill__header--icon {
     font-size: var(--iconSize-large);
   }
+  /* portfolio */
+  .portfolio__img {
+    width: 25rem;
+  }
   /* footer */
   .footer {
     padding-bottom: var(--header-height);
@@ -102,6 +106,20 @@
   .about__btn {
     justify-content: center;
   }
+  /* main-portfolio */
+  .portfolio__swiper .swiper-slide {
+    grid-template-columns: 1fr;
+  }
+  .portfolio__link {
+    text-align: center;
+  }
+  .portfolio__content {
+    justify-content: center;
+    align-items: center;
+  }
+  .portfolio__subtitle {
+    width: 50%;
+  }
   /* footer */
   .footer__container {
     grid-template-columns: 1fr;
@@ -127,8 +145,9 @@
   :root {
     --fontSize-lg: 4.8rem;
     --fontSize-md: 2.4rem;
-    --fontSize-sm: 1.8rem;
-    --fontSize-xs: 1.4rem;
+    --fontSize-sm: 2rem;
+    --fontSize-xs: 1.6rem;
+    --fontSize-xxs: 1.4rem;
   }
   .base__social {
     transform: translateX(-8rem);
