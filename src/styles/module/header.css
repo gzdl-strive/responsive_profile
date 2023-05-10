@@ -44,6 +44,17 @@
   color: var(--link-color);
 }
 
+.nav__link.active-link,
+.nav__link.active-link .nav__icon {
+  color: var(--theme-color);
+  text-shadow: 0 0.1rem 0.2rem var(--theme-color);
+  transform: scale(1.05);
+}
+
+.nav__link.active-link {
+  border-bottom: 0.2rem solid var(--theme-color);
+}
+
 /* need cover iconfont-style */
 .iconfont.nav__btn--toggle {
   font-size: var(--iconSize-large);
@@ -96,19 +107,5 @@
 .nav__icon,
 .nav__languageText,
 .nav__close {
-  display: none;
-}
-
-/* eye protection */
-.eyeProtection {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-eyeProtection);
-  opacity: 0.25;
-  z-index: var(--eyeProtection-zIndex);
-  pointer-events: none;
   display: none;
 }

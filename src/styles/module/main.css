@@ -3,6 +3,7 @@
 @import url("main/skills.css");
 @import url("main/experience.css");
 @import url("main/portfolio.css");
+@import url("main/contact.css");
 
 /* main style */
 .main {
@@ -12,7 +13,7 @@
 
 /* main section style */
 .section {
-  padding: 9.6rem 0 3.2rem;
+  padding: 9.6rem 0 5.2rem;
 }
 
 /* section public style */

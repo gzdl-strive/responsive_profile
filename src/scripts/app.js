@@ -17,10 +17,12 @@ navToggle.addEventListener('click', () => {
   navClose && (navClose.style.display = 'block');
 });
 // ## nav close
-navClose.addEventListener('click', () => {
+navClose.addEventListener('click', closeNavMenu);
+
+function closeNavMenu() {
   navMenu && (navMenu.style.bottom = '-100%');
   navClose && (navClose.style.display = 'none');
-});
+}
 
 // ## nav theme
 const themeChangeBtn = document.querySelector('.nav__btn--theme');
@@ -69,6 +71,15 @@ const languageMap = {
 };
 languageMap.initLanguage();
 languageChangeContainer.addEventListener('click', languageMap.changeLanguage);
+
+// ## nav link -> every click to close the navMenu(点击小屏幕中链接，关闭导航栏)
+const navLinks = document.querySelectorAll('.nav__link');
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    const navMenu_show_sm = navMenu.style.bottom;
+    navMenu_show_sm === '0px' && closeNavMenu();
+  });
+});
 
 // eye protection
 const eyeProtectionContainer = document.querySelector('.eyeProtection');
@@ -179,3 +190,7 @@ new Swiper(".portfolio__swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+export {
+  closeNavMenu
+}

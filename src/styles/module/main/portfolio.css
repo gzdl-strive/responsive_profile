@@ -1,6 +1,6 @@
 /* portfolio */
 .portfolio__swiper.swiper-horizontal{
-  padding-bottom: 4rem;
+  padding-bottom: 4%;
 }
 
 .portfolio__swiper .swiper-slide {
@@ -14,7 +14,7 @@
   width: 32rem;
   object-fit: cover;
   border-radius: 2rem;
-  height: 80%;
+  height: 85%;
   justify-self: center;
   transition: width 0.3s ease-out;
 }
@@ -30,6 +30,14 @@
   font-size: var(--fontSize-xs);
   color: var(--theme-subtitle-textColor);
   font-family: monospace, sans-serif;
+}
+
+.portfolio__link--name {
+  text-transform: uppercase;
+}
+
+.iconfont.portfolio__link--icon {
+  font-size: var(--iconSize-small);
 }
 
 .swiper-button-next {
@@ -50,4 +58,17 @@
   font-size: 2rem;
   font-weight: bold;
   color: var(--theme-color);
+}
+
+.portfolio__swiper .swiper-button-prev {
+  left: -1%;
+}
+
+.portfolio__swiper .swiper-button-next {
+  right: -1%;
+}
+
+.portfolio__swiper .swiper-button-next, 
+.portfolio__swiper .swiper-button-prev {
+  top: 43%;
 }

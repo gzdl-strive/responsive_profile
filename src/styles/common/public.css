@@ -80,11 +80,19 @@
 
 /* button */
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  column-gap: 0.5rem;
   padding: 1.5rem;
   background-color: var(--theme-color);
   color: var(--color-light);
   border-radius: .8rem;
-  font-size: var(--fontSize-md);
+  font-size: var(--fontSize-xs);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ellipsis */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }

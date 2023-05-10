@@ -2,7 +2,7 @@
   "nav__base": "base",
   "nav__about": "about",
   "nav__skills": "skills",
-  "nav__portfolio": "profile",
+  "nav__portfolio": "portfolio",
   "nav__contact": "contact",
   "nav__translate": "translate",
   "nav__btn--theme": "switch theme",
@@ -44,6 +44,10 @@
 
   "portfolio__title": "portfolio",
   "portfolio__subtitle": "most recent works",
+  "portfolio__subtitle--vitv": "This website is suitable for PC screens, built on vite and vue3, and is a small backend project that is ready to use out of the box.",
+  "portfolio__subtitle--singleRoom": "A website with only a house model, built for learning Blender and Three.js.",
+  "portfolio__subtitle--profile": "A website established for learning responsiveness, suitable for any device.",
+  "portfolio__link--view": "view",
 
   "contact__title": "contact",
   "contact__subtitle": "get in touch",
@@ -51,8 +55,9 @@
   "footer__subtitle": "Frontend Developer",
   "footer__base": "base",
   "footer__skills": "skills",
-  "footer__portfolio": "profile",
+  "footer__portfolio": "portfolio",
 
-  "base__icon--gitee": "gitee",
-  "base__icon--bilibili": "bilibili"
+  "icon__gitee": "gitee",
+  "icon__juejin": "juejin",
+  "icon__bilibili": "bilibili"
 }

@@ -6,6 +6,7 @@
   --color-danger: #f52323;
   --color-lightPurple: #a8a3ca;
   --color-purple: #6a58d8;
+  --color-deepPurple: #3e29c5;
   --color-info: #909399;
   --color-light: #ffffff;
   --color-dark: #191627;
@@ -14,6 +15,10 @@
   --color-gray: #707070;
   --color-deepGray: #4e4d4d;
   --color-eyeProtection: #cce8cf;
+
+  /* scrollbar 滚动条 */
+  --scroll-bar-color: var(--color-lightPurple);
+  --scroll-thumb-color: var(--color-purple);
 
   /* font size: lg大屏 md中屏 sm小屏 xs超小型 xxs超超小型*/
   --fontSize-lg: 3.2rem;
@@ -55,12 +60,16 @@
   --layout-padding: 0 1.6rem;
 
   /* z-index */
+  --scrolltop-zIndex: 8;
   --header-zIndex: 10;
   --eyeProtection-zIndex: 99;
 
   /* header variable */
   --header-height: 6rem;
   --header-boxShadow: 0 -0.1rem .3rem var(--color-dark);
+
+  /* scrolltop variable */
+  --scrolltop-bg: var(--color-deepPurple);
 }
 
 body.dark-theme {
@@ -68,4 +77,5 @@ body.dark-theme {
   --theme-footer-bgColor: var(--color-deepDark);
   --theme-textColor: var(--color-light);
   --theme-subtitle-textColor: var(--color-lightGray);
+  --scrolltop-bg: var(--theme-color);
 }

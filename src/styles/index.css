@@ -1,10 +1,13 @@
+@import url("common/variable.css"); /* import variable style(引入变量) */
 @import url("common/font.css"); /* import web font(引入字体库) */
 @import url("common/reset.css"); /* import reset style(修改默认样式) */
+@import url("common/cover-browser.css"); /* import scroll bar style(滚动条样式) */
 @import url("common/public.css"); /* import public style(公共、通用样式) */
 @import url("common/animation.css"); /* import animation style(通用动画样式)*/
 @import url("module/header.css"); /* import header style(头部样式) */
 @import url("module/main.css"); /* import main style(主内容样式) */
 @import url("module/footer.css"); /* import footer style(页脚样式) */
+@import url("module/other.css"); /* import other style(其它样式：护眼、滚动至顶部)*/
 
 .header,
 .main {
@@ -42,7 +45,7 @@
   }
   /* main */
   .section {
-    padding: 3rem 0 6.4rem;
+    padding: 3rem 0 5.4rem;
   }
   .about__img {
     width: 20rem;
@@ -118,7 +121,20 @@
     align-items: center;
   }
   .portfolio__subtitle {
-    width: 50%;
+    width: 60%;
+  }
+  .portfolio__swiper.swiper-horizontal{
+    padding-bottom: 8%;
+  }
+  /* main-contact */
+  .contact__list {
+    grid-template-columns: 1fr;
+  }
+  .contact__item:nth-child(even) {
+    flex-direction: row;
+  }
+  .contact__item:nth-child(even) .contact__title {
+    text-align: left;
   }
   /* footer */
   .footer__container {
@@ -133,7 +149,7 @@
 /* xs */
 @media screen and (min-width: 768px) {
   .section {
-    padding: 9.6rem 0 3.2rem;
+    padding: 9.6rem 0 5.2rem;
   }
   .about__subtitle {
     margin-bottom: var(--mb-4);

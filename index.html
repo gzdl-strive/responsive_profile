@@ -9,7 +9,7 @@
     content="This website is built for responsive learning and includes personal experiences and works." />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
   <link rel="stylesheet" href="src/styles/index.css">
-  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_yo2b3vlc0tp.css">
+  <link rel="stylesheet" href="//at.alicdn.com/t/c/font_4046884_ffwp3yzv0q7.css">
   <title>gzdl-strive's profile</title>
 </head>
 
@@ -74,6 +74,7 @@
       </div>
     </nav>
   </header>
+
   <!-- ** main-content ** -->
   <main class="main">
     <!-- base -->
@@ -85,10 +86,13 @@
               <i class="iconfont icon-github base__icon" title="github"></i>
             </a>
             <a href="javascript:void(0);">
-              <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon-gitee" title="gitee"></i>
+              <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon__gitee" title="gitee"></i>
             </a>
             <a href="javascript:void(0);">
-              <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon-bilibili" title="bilibili"></i>
+              <i class="iconfont icon-juejin base__icon" data-i18n-icon="icon__juejin" title="juejin"></i>
+            </a>
+            <a href="javascript:void(0);">
+              <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon__bilibili" title="bilibili"></i>
             </a>
           </div>
           <div class="base__img">
@@ -258,14 +262,13 @@
               <img src="./src/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
               <div class="portfolio__content flex column">
                 <h3 class="portfolio__title">vitv-admin</h3>
-                <h4 class="portfolio__subtitle">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--vitv">
+                  This website is suitable for PC screens, built on vite and vue3, and is a small backend project that is ready to use out of the box.
                 </h4>
                 <div class="portfolio__link">
-                  <a href="javascript:void(0);" class="btn">
-                    <span>Demo</span>
-                    <i class="iconfont icon-link"></i>
+                  <a href="http://124.222.103.60/" class="btn" target="_blank">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
                   </a>
                 </div>
               </div>
@@ -273,15 +276,14 @@
             <div class="swiper-slide">
               <img src="./src/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
               <div class="portfolio__content flex column">
-                <h3 class="portfolio__title">vitv-admin</h3>
-                <h4 class="portfolio__subtitle">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
+                <h3 class="portfolio__title">my-single-room</h3>
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--singleRoom">
+                  A website with only a house model, built for learning Blender and Three.js.
                 </h4>
                 <div class="portfolio__link">
-                  <a href="javascript:void(0);" class="btn">
-                    <span>Demo</span>
-                    <i class="iconfont icon-link"></i>
+                  <a href="http://124.222.103.60:8888/" class="btn" target="_blank">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
                   </a>
                 </div>
               </div>
@@ -289,15 +291,14 @@
             <div class="swiper-slide">
               <img src="./src/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
               <div class="portfolio__content flex column">
-                <h3 class="portfolio__title">vitv-admin</h3>
-                <h4 class="portfolio__subtitle">
-                  Website adaptable to all devices, with ui components and
-                  animated interactions.
+                <h3 class="portfolio__title">gzdl-profile</h3>
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--profile">
+                  A website established for learning responsiveness, suitable for any device.
                 </h4>
                 <div class="portfolio__link">
-                  <a href="javascript:void(0);" class="btn">
-                    <span>Demo</span>
-                    <i class="iconfont icon-link"></i>
+                  <a href="#" class="btn">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
                   </a>
                 </div>
               </div>
@@ -314,8 +315,55 @@
     <section id="contact" class="contact section">
       <h2 class="section__title" data-i18n="contact__title">contact</h2>
       <h3 class="section__subtitle" data-i18n="contact__subtitle">get in touch</h3>
+      <div class="contact__container container">
+        <ul class="contact__list grid">
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-contact contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">call me</h3>
+              <span class="contact__subtitle">123********</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-email contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">e-mail</h3>
+              <span class="contact__subtitle">gzdlstrive@gmail.com</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-location contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">location</h3>
+              <span class="contact__subtitle">HangZhou, CHN</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-github contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">github</h3>
+              <span class="contact__subtitle">github.com/gzdl-strive</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-gitee contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">gitee</h3>
+              <span class="contact__subtitle">gitee.com/gzdl-strive</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-juejin contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">juejin</h3>
+              <span class="contact__subtitle">柜子动了</span>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
   </main>
+
   <!-- ** footer ** -->
   <footer class="footer">
     <div class="footer__bg">
@@ -342,10 +390,13 @@
             <i class="iconfont icon-github footer__icon" title="github"></i>
           </a>
           <a href="javascript:void(0);" class="footer__social">
-            <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon-gitee" title="gitee"></i>
+            <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon__gitee" title="gitee"></i>
           </a>
           <a href="javascript:void(0);" class="footer__social">
-            <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon-bilibili" title="bilibili"></i>
+            <i class="iconfont icon-juejin footer__icon" data-i18n-icon="icon__juejin" title="juejin"></i>
+          </a>
+          <a href="javascript:void(0);" class="footer__social">
+            <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon__bilibili" title="bilibili"></i>
           </a>
         </div>
       </div>
@@ -359,6 +410,14 @@
 
   <!-- ** eye protection ** -->
   <div class="eyeProtection"></div>
+
+  <!-- ** scroll top ** -->
+  <div class="scrolltop__container flex center_center">
+    <a href="#">
+      <i class="iconfont icon-scroll2Top scrolltop__icon"></i>
+    </a>
+  </div>
+
   <script type="module" defer src="/main.js"></script>
 </body>
 
