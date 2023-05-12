@@ -16,6 +16,9 @@
 
 /* sm */
 @media screen and (max-width: 767px) {
+  :root {
+    --header-boxShadow: 0 0.1rem .2rem var(--color-dark);
+  }
   /* header position bottom */
   .header {
     top: initial;
@@ -143,6 +146,21 @@
   }
   .footer__container .footer__links {
     justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 430px) {
+  .experience__data {
+    grid-template-columns: 1fr;
+    border-left: 0.3rem solid var(--theme-color);
+  }
+  .experience__data:nth-child(n + 2) {
+    margin-top: var(--mb-2);
+  }
+  .experience__empty {
+    display: none;
+  }
+  .experience__line {
+    display: none;
   }
 }
 
