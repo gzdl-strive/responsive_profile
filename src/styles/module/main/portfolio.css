@@ -10,6 +10,10 @@
   column-gap: 2rem;
 }
 
+.portfolio__picture {
+  text-align: center;
+}
+
 .portfolio__img {
   width: 32rem;
   object-fit: cover;

@@ -259,7 +259,11 @@
         <div class="swiper portfolio__swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img src="./src/assets/images/vitv-admin-950w.jpeg" alt="" class="portfolio__img">
+              <picture class="portfolio__picture">
+                <source media="(max-width: 949px)" srcset="./src/assets/images/vitv-admin-480w.jpeg">
+                <source media="(min-width: 950px)" srcset="./src/assets/images/vitv-admin-950w.jpeg">
+                <img src="./src/assets/images/vitv-admin-950w.jpeg" alt="" class="portfolio__img">
+              </picture>
               <div class="portfolio__content flex column">
                 <h3 class="portfolio__title">vitv-admin</h3>
                 <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--vitv">
@@ -274,7 +278,7 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <picture>
+              <picture class="portfolio__picture">
                 <source media="(max-width: 949px)" srcset="./src/assets/images/my-single-room-480w.jpeg">
                 <source media="(min-width: 950px)" srcset="./src/assets/images/my-single-room-950w.jpeg">
                 <img src="./src/assets/images/my-single-room-950w.jpeg" alt="" class="portfolio__img">
@@ -293,7 +297,11 @@
               </div>
             </div>
             <div class="swiper-slide">
-              <img src="./src/assets/images/portfolio1.jpg" alt="" class="portfolio__img">
+              <picture class="portfolio__picture">
+                <source media="(max-width: 949px)" srcset="./src/assets/images/responsive-profile-480w.jpeg">
+                <source media="(min-width: 950px)" srcset="./src/assets/images/responsive-profile-950w.jpeg">
+                <img src="./src/assets/images/responsive-profile-950w.jpeg" alt="" class="portfolio__img">
+              </picture>
               <div class="portfolio__content flex column">
                 <h3 class="portfolio__title">gzdl-profile</h3>
                 <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--profile">
