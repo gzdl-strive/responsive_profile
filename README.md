@@ -40,4 +40,4 @@ Responsive Website Using Html, Css and JavaScript, with a beautiful user interfa
 * gzdl-strive
 
 ## Image Example
-![case](public/case.jpg)
+![case](https://github.com/gzdl-strive/responsive_profile/blob/main/public/case.jpg)

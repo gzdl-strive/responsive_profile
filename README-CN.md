@@ -40,4 +40,4 @@
 * gzdl-strive
 
 ## 图例
-![case-cn](public/case-cn.jpg)
+![case-cn](https://github.com/gzdl-strive/responsive_profile/blob/main/public/case-cn.jpg)
