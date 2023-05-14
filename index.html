@@ -1,15 +1,435 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="gzdl-strive" />
-    <meta name="description" content="This website is built for responsive learning and includes personal experiences and works." />
-    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
-    <title>gzdl-strive's profile</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="gzdl-strive" />
+  <meta name="description"
+    content="This website is built for responsive learning and includes personal experiences and works." />
+  <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+  <link rel="stylesheet" href="src/styles/index.css">
+  <link rel="stylesheet" href="src/assets/icon/iconfont.css">
+  <title>gzdl-strive's profile</title>
+</head>
+
+<body>
+  <!-- ** header ** -->
+  <header class="header">
+    <nav class="nav container flex gap-col-1-5 between_center">
+      <!-- logo -->
+      <a href="javascript:void(0);" class="nav__logo">
+        gzdl-strive
+      </a>
+      <!-- nav list-->
+      <div class="nav__menu">
+        <ul class="nav__list gap-col-3-2 flex">
+          <li class="nav__item flex center_center">
+            <a href="#base" class="nav__link flex gap-row-1 column center_center">
+              <i class="iconfont icon-base nav__icon"></i>
+              <span data-i18n="nav__base">base</span>
+            </a>
+          </li>
+          <li class="nav__item flex center_center">
+            <a href="#about" class="nav__link flex gap-row-1 column center_center">
+              <i class="iconfont icon-smile nav__icon"></i>
+              <span data-i18n="nav__about">about</span>
+            </a>
+          </li>
+          <li class="nav__item flex center_center">
+            <a href="#skills" class="nav__link flex gap-row-1 column center_center">
+              <i class="iconfont icon-film nav__icon"></i>
+              <span data-i18n="nav__skills">skills</span>
+            </a>
+          </li>
+          <li class="nav__item flex center_center">
+            <a href="#portfolio" class="nav__link flex gap-row-1 column center_center">
+              <i class="iconfont icon-picture nav__icon"></i>
+              <span data-i18n="nav__portfolio">portfolio</span>
+            </a>
+          </li>
+          <li class="nav__item flex center_center">
+            <a href="#contact" class="nav__link flex gap-row-1 column center_center">
+              <i class="iconfont icon-contact nav__icon"></i>
+              <span data-i18n="nav__contact">contact</span>
+            </a>
+          </li>
+          <li class="nav__item flex center_center">
+            <a class="nav__link nav__languageContainer flex gap-row-1 column center_center">
+              <i class="iconfont icon-En2Cn nav__language"></i>
+              <span class="nav__languageText" data-i18n="nav__translate">translate</span>
+            </a>
+          </li>
+        </ul>
+        <i class="iconfont icon-cancel_expand nav__close"></i>
+      </div>
+
+      <!-- sm screen nav-menu -->
+      <div class="nav__btns flex center_center gap-col-1-5">
+        <i class="iconfont icon-light-mode icon-dark-mode nav__btn--theme" data-i18n-icon="nav__btn--theme"
+          title="switch theme"></i>
+        <i class="iconfont icon-eye nav__btn--eyeProtection" data-i18n-icon="nav__btn--eyeProtection"
+          title="eye protection mode"></i>
+        <i class="iconfont icon-expand nav__btn--toggle" data-i18n-icon="nav__btn--toggle" title="expand nav menu"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- ** main-content ** -->
+  <main class="main">
+    <!-- base -->
+    <section id="base" class="base section">
+      <div class="base__container container">
+        <div class="base__content grid gap-col-3-2">
+          <div class="base__social grid gap-row-1-6">
+            <a href="https://github.com/gzdl-strive" target="_blank">
+              <i class="iconfont icon-github base__icon" title="github"></i>
+            </a>
+            <a href="https://gitee.com/gzdl-strive" target="_blank">
+              <i class="iconfont icon-gitee base__icon" data-i18n-icon="icon__gitee" title="gitee"></i>
+            </a>
+            <a href="https://juejin.cn/user/1636517801628782" target="_blank">
+              <i class="iconfont icon-juejin base__icon" data-i18n-icon="icon__juejin" title="juejin"></i>
+            </a>
+            <a href="javascript:void(0);">
+              <i class="iconfont icon-bilibili base__icon" data-i18n-icon="icon__bilibili" title="bilibili"></i>
+            </a>
+          </div>
+          <div class="base__img">
+            <img src="/logo.svg" alt="" />
+          </div>
+          <div class="base__data">
+            <h2 class="base__title"><span data-i18n="base__title">Hi, I'm</span> <br />gzdl-strive</h2>
+            <h3 class="base__subtitle" data-i18n="base__subtitle">Frontend Developer</h3>
+            <p class="base__description" data-i18n="base__description">
+              High level experience in web design and development knowledge,
+              producing quality work.
+            </p>
+            <a href="#contact" class="btn">
+              <span data-i18n="base__contact">contact me</span>
+              <i class="iconfont icon-contact base__contact--icon"></i>
+            </a>
+          </div>
+        </div>
+        <!-- scroll -->
+        <div class="base__scroll">
+          <a href="#about" class="base__scroll--btn inline-flex start_center gap-col-1">
+            <i class="iconfont icon-mouse base__scroll--icon"></i>
+            <span data-i18n="base__scroll">scroll down</span>
+            <i class="iconfont icon-scrollDown base__scroll--icon"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="about section">
+      <h2 class="section__title" data-i18n="about__title">about me</h2>
+      <h3 class="section__subtitle" data-i18n="about__subtitle">my introduction</h3>
+      <div class="about__container container grid gap-col-3-2 gap-row-2">
+        <img src="./src/assets/images/avatar.jpg" class="about__img" alt="">
+        <div class="about__data flex column gap-row-4">
+          <p class="about__description" data-i18n="about__description">
+            Web developer, with extensive knowledge and years of experience, working in web technologies, delivering quality work.
+          </p>
+          <ul class="about__infos flex between_center gap-col-1">
+            <li class="about__info flex column">
+              <span class="about__info--num">02+</span>
+              <span class="about__info--name" data-i18n="about__workExperience">years of <br />experience</span>
+            </li>
+            <li class="about__info flex column">
+              <span class="about__info--num">03</span>
+              <span class="about__info--name" data-i18n="about__completedProject">completed<br /> projects</span>
+            </li>
+            <li class="about__info flex column">
+              <span class="about__info--num">01</span>
+              <span class="about__info--name" data-i18n="about__conpanyWorked">companies<br /> worked</span>
+            </li>
+          </ul>
+          <div class="about__btn flex">
+            <a href="logo.svg" class="btn" download="">
+              <span data-i18n="about__downloadResume">resume</span>
+              <i class="iconfont icon-download about__btn--download"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="skills section">
+      <h2 class="section__title" data-i18n="skills__title">skills</h2>
+      <h3 class="section__subtitle" data-i18n="skills__subtitle">my technical level</h3>
+      <div class="skills__container container grid gap-row-4">
+      </div>
+    </section>
+
+    <!-- experience -->
+    <section id="experience" class="experience section">
+      <h2 class="section__title" data-i18n="experience__title">experience</h2>
+      <h3 class="section__subtitle" data-i18n="experience__subtitle">my personal journey</h3>
+      <div class="experience__container container">
+        <ul class="experience__tabs flex center_center gap-col-3-2">
+          <li class="experience__tab active">
+            <a href="javascript:void(0);" class="experience__link flex gap-col-1 center_center">
+              <i class="iconfont icon-education experience__icon"></i>
+              <span class="experience__name" data-i18n="experience__education">education</span>
+            </a>
+          </li>
+          <li class="experience__tab">
+            <a href="javascript:void(0);" class="experience__link flex gap-col-1 center_center">
+              <i class="iconfont icon-work experience__icon"></i>
+              <span class="experience__name" data-i18n="experience__work">work</span>
+            </a>
+          </li>
+        </ul>
+        <div class="experience__contents grid">
+          <div class="experience__content">
+            <div class="experience__data grid gap-col-1">
+              <div class="experience__description">
+                <h3 class="experience__title" data-i18n="experience__speciality">computer engineer</h3>
+                <h4 class="experience__subtitle" data-i18n="experience__university">JiLin University of Finance and Economics</h4>
+                <div class="experience__date">
+                  <i class="iconfont icon-date"></i>
+                  <span>2017.9-2021.6</span>
+                </div>
+              </div>
+              <div class="experience__line"></div>
+            </div>
+            <div class="experience__data grid gap-col-1">
+              <div class="experience__empty"></div>
+              <div class="experience__line"></div>
+              <div class="experience__description">
+                <h3 class="experience__title" data-i18n="experience__title--direction">web design</h3>
+                <h4 class="experience__subtitle" data-i18n="experience__subtitle--way">self-study</h4>
+                <div class="experience__date">
+                  <i class="iconfont icon-date"></i>
+                  <span>2020.3-2020.7</span>
+                </div>
+              </div>
+            </div>
+            <div class="experience__data grid gap-col-1">
+              <div class="experience__description">
+                <h3 class="experience__title" data-i18n="experience__title--career">web development</h3>
+                <h4 class="experience__subtitle" data-i18n="experience__subtitle--way2">practice</h4>
+                <div class="experience__date">
+                  <i class="iconfont icon-date"></i>
+                  <span>2020.7-2021.6</span>
+                </div>
+              </div>
+              <div class="experience__line"></div>
+            </div>
+          </div>
+          <div class="experience__content experience__content--close">
+            <div class="experience__data grid gap-col-1">
+              <div class="experience__description">
+                <h3 class="experience__title" data-i18n="experience__title--career">web development</h3>
+                <h4 class="experience__subtitle" data-i18n="experience__subtitle--way2">practice</h4>
+                <div class="experience__date">
+                  <i class="iconfont icon-date"></i>
+                  <span>2020.7-2021.6</span>
+                </div>
+              </div>
+              <div class="experience__line"></div>
+            </div>
+            <div class="experience__data grid gap-col-1">
+              <div></div>
+              <div class="experience__line"></div>
+              <div class="experience__description">
+                <h3 class="experience__title" data-i18n="experience__title--career">web development</h3>
+                <h4 class="experience__subtitle" data-i18n="experience__subtitle--working">working...</h4>
+                <div class="experience__date">
+                  <i class="iconfont icon-date"></i>
+                  <span>2021.6-now</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="portfolio section">
+      <h2 class="section__title" data-i18n="portfolio__title">portfolio</h2>
+      <h3 class="section__subtitle" data-i18n="portfolio__subtitle">most recent works</h3>
+      <div class="portfolio__container container">
+        <!-- Swiper -->
+        <div class="swiper portfolio__swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <picture class="portfolio__picture">
+                <source media="(max-width: 949px)" srcset="./src/assets/images/vitv-admin-480w.jpeg">
+                <source media="(min-width: 950px)" srcset="./src/assets/images/vitv-admin-950w.jpeg">
+                <img src="./src/assets/images/vitv-admin-950w.jpeg" alt="" class="portfolio__img">
+              </picture>
+              <div class="portfolio__content flex column">
+                <h3 class="portfolio__title">vitv-admin</h3>
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--vitv">
+                  This website is suitable for PC screens, built on vite and vue3, and is a small backend project that is ready to use out of the box.
+                </h4>
+                <div class="portfolio__link">
+                  <a href="http://124.222.103.60/" class="btn" target="_blank">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture class="portfolio__picture">
+                <source media="(max-width: 949px)" srcset="./src/assets/images/my-single-room-480w.jpeg">
+                <source media="(min-width: 950px)" srcset="./src/assets/images/my-single-room-950w.jpeg">
+                <img src="./src/assets/images/my-single-room-950w.jpeg" alt="" class="portfolio__img">
+              </picture>
+              <div class="portfolio__content flex column">
+                <h3 class="portfolio__title">my-single-room</h3>
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--singleRoom">
+                  A website with only a house model, built for learning Blender and Three.js.
+                </h4>
+                <div class="portfolio__link">
+                  <a href="http://124.222.103.60:8888/" class="btn" target="_blank">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <picture class="portfolio__picture">
+                <source media="(max-width: 949px)" srcset="./src/assets/images/responsive-profile-480w.jpeg">
+                <source media="(min-width: 950px)" srcset="./src/assets/images/responsive-profile-950w.jpeg">
+                <img src="./src/assets/images/responsive-profile-950w.jpeg" alt="" class="portfolio__img">
+              </picture>
+              <div class="portfolio__content flex column">
+                <h3 class="portfolio__title">gzdl-profile</h3>
+                <h4 class="portfolio__subtitle" data-i18n="portfolio__subtitle--profile">
+                  A website established for learning responsiveness, suitable for any device.
+                </h4>
+                <div class="portfolio__link">
+                  <a href="#" class="btn">
+                    <span class="portfolio__link--name" data-i18n="portfolio__link--view">view</span>
+                    <i class="iconfont icon-link portfolio__link--icon"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="contact section">
+      <h2 class="section__title" data-i18n="contact__title">contact</h2>
+      <h3 class="section__subtitle" data-i18n="contact__subtitle">get in touch</h3>
+      <div class="contact__container container">
+        <ul class="contact__list grid">
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-contact contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">call me</h3>
+              <span class="contact__subtitle">123********</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-email contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">e-mail</h3>
+              <span class="contact__subtitle">gzdlstrive@gmail.com</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-location contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">location</h3>
+              <span class="contact__subtitle">HangZhou, CHN</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-github contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">github</h3>
+              <span class="contact__subtitle">github.com/gzdl-strive</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-gitee contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">gitee</h3>
+              <span class="contact__subtitle">gitee.com/gzdl-strive</span>
+            </div>
+          </li>
+          <li class="contact__item flex gap-col-1-5">
+            <i class="iconfont icon-juejin contact__icon"></i>
+            <div class="contact__data">
+              <h3 class="contact__title">juejin</h3>
+              <span class="contact__subtitle">柜子动了</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ** footer ** -->
+  <footer class="footer">
+    <div class="footer__bg">
+      <div class="footer__container container grid gap-col-3-2">
+        <div>
+          <h2 class="footer__title">GZDLPROFILE</h2>
+          <h3 class="footer__subtitle" data-i18n="footer__subtitle">Frontend Developer</h3>
+        </div>
+
+        <ul class="footer__links flex center_center gap-col-3-2">
+          <li>
+            <a href="#base" class="footer__link" data-i18n="footer__base">base</a>
+          </li>
+          <li>
+            <a href="#skills" class="footer__link" data-i18n="footer__skills">skills</a>
+          </li>
+          <li>
+            <a href="#portfolio" class="footer__link" data-i18n="footer__portfolio">portfolio</a>
+          </li>
+        </ul>
+
+        <div class="footer__socials">
+          <a href="https://github.com/gzdl-strive" target="_blank" class="footer__social">
+            <i class="iconfont icon-github footer__icon" title="github"></i>
+          </a>
+          <a href="https://gitee.com/gzdl-strive" target="_blank" class="footer__social">
+            <i class="iconfont icon-gitee footer__icon" data-i18n-icon="icon__gitee" title="gitee"></i>
+          </a>
+          <a href="https://juejin.cn/user/1636517801628782" target="_blank" class="footer__social">
+            <i class="iconfont icon-juejin footer__icon" data-i18n-icon="icon__juejin" title="juejin"></i>
+          </a>
+          <a href="javascript:void(0);" class="footer__social">
+            <i class="iconfont icon-bilibili footer__icon" data-i18n-icon="icon__bilibili" title="bilibili"></i>
+          </a>
+        </div>
+      </div>
+
+      <p class="footer__copy">
+        &#169; GZDL-STRIVE.Copy from
+        <a class="footer__copy" href="https://www.youtube.com/c/Bedimcode" target="_blank">Bedimcode</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- ** eye protection ** -->
+  <div class="eyeProtection"></div>
+
+  <!-- ** scroll top ** -->
+  <div class="scrolltop__container flex center_center">
+    <a href="#">
+      <i class="iconfont icon-scroll2Top scrolltop__icon"></i>
+    </a>
+  </div>
+
+  <script type="module" defer src="/main.js"></script>
+</body>
+
 </html>

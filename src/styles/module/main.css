@@ -1,0 +1,35 @@
+@import url("main/base.css");
+@import url("main/about.css");
+@import url("main/skills.css");
+@import url("main/experience.css");
+@import url("main/portfolio.css");
+@import url("main/contact.css");
+
+/* main style */
+.main {
+  background-color: var(--theme-bgColor);
+  transition: background-color 0.3s linear;
+}
+
+/* main section style */
+.section {
+  padding: 9.6rem 0 5.2rem;
+}
+
+/* section public style */
+.section__title {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: var(--fontSize-md);
+  color: var(--theme-textColor);
+  letter-spacing: 0.1rem;
+  margin-bottom: var(--mb-1);
+}
+
+.section__subtitle {
+  text-align: center;
+  font-size: var(--fontSize-sm);
+  font-weight: 100;
+  color: var(--theme-subtitle-textColor);
+  margin-bottom: var(--mb-3);
+}

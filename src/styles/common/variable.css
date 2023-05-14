@@ -1,0 +1,81 @@
+:root {
+  /* Basic Text Color(基础色定义) */
+  --color-primary: #228cf6;
+  --color-success: #67c23a;
+  --color-warning: #f2960d;
+  --color-danger: #f52323;
+  --color-lightPurple: #a8a3ca;
+  --color-purple: #6a58d8;
+  --color-deepPurple: #3e29c5;
+  --color-info: #909399;
+  --color-light: #ffffff;
+  --color-dark: #191627;
+  --color-deepDark: #100e1b;
+  --color-lightGray: #a19fac;
+  --color-gray: #707070;
+  --color-deepGray: #4e4d4d;
+  --color-eyeProtection: #cce8cf;
+
+  /* scrollbar 滚动条 */
+  --scroll-bar-color: var(--color-lightPurple);
+  --scroll-thumb-color: var(--color-purple);
+
+  /* font size: lg大屏 md中屏 sm小屏 xs超小型 xxs超超小型*/
+  --fontSize-lg: 3.2rem;
+  --fontSize-md: 1.8rem;
+  --fontSize-sm: 1.6rem;
+  --fontSize-xs: 1.4rem;
+  --fontSize-xxs: 1.2rem;
+
+  /* icon size hugeLarge超大图标 large大图标 normal常规 small小图标*/
+  --iconSize-hugeLarge: 4rem;
+  --iconSize-large: 3rem;
+  --iconSize-normal: 2.5rem;
+  --iconSize-small: 2rem;
+  --iconSize-littleSmall: 1rem;
+
+  /* Margin Bottom */
+  --mb-0-5: 0.5rem;
+  --mb-1: 1rem;
+  --mb-2: 2rem;
+  --mb-3: 3rem;
+  --mb-4: 4rem;
+
+  /* a element hover color(a元素悬浮色) */
+  --link-color: var(--color-primary);
+
+  /* theme color */
+  --theme-color: var(--color-purple);
+
+  /* theme-main-background-color */
+  --theme-bgColor: var(--color-light);
+  /* theme-footer-background-color */
+  --theme-footer-bgColor: var(--theme-color);
+  /* theme-main-text-color */
+  --theme-textColor: var(--color-dark); 
+  /* theme-subtitle-text-color */
+  --theme-subtitle-textColor: var(--color-deepGray);
+
+  /* header,main,footer */
+  --layout-padding: 0 1.6rem;
+
+  /* z-index */
+  --scrolltop-zIndex: 8;
+  --header-zIndex: 10;
+  --eyeProtection-zIndex: 99;
+
+  /* header variable */
+  --header-height: 6rem;
+  --header-boxShadow: 0 -0.1rem .2rem var(--color-dark);
+
+  /* scrolltop variable */
+  --scrolltop-bg: var(--color-deepPurple);
+}
+
+body.dark-theme {
+  --theme-bgColor: var(--color-dark);
+  --theme-footer-bgColor: var(--color-deepDark);
+  --theme-textColor: var(--color-light);
+  --theme-subtitle-textColor: var(--color-lightGray);
+  --scrolltop-bg: var(--theme-color);
+}

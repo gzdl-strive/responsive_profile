@@ -1,0 +1,40 @@
+/* contact style */
+.contact__list {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+}
+
+.contact__item {
+  align-items: center;
+  margin-bottom: var(--mb-3);
+}
+
+.contact__item:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+.contact__item:nth-child(even) .contact__title {
+  text-align: right;
+}
+
+.contact__icon {
+  color: var(--theme-color);
+}
+
+.iconfont.contact__icon {
+  font-size: var(--iconSize-large);
+}
+
+.contact__title {
+  font-size: var(--fontSize-xs);
+  color: var(--theme-textColor);
+  margin-bottom: var(--mb-1);
+  letter-spacing: 0.2rem;
+  text-transform: capitalize;
+}
+
+.contact__subtitle {
+  font-size: var(--fontSize-xxs);
+  color: var(--theme-subtitle-textColor);
+  letter-spacing: 0.3rem;
+}
