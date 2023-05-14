@@ -1,12 +1,22 @@
-import { defineConfig } from 'vite';
+import { defineConfig } from "vite";
+import path from "path";
 
 export default defineConfig({
+  // Development Server Configuration(开发服务配置)
   server: {
     port: 8889,
     open: true
   },
+  resolve: {
+    alias: {
+      "@a": path.resolve(__dirname, "./src/assets"),
+      "@d": path.resolve(__dirname, "./src/data"),
+      "@s": path.resolve(__dirname, "./src/scripts"),
+      "@u": path.resolve(__dirname, "./src/utils")
+    }
+  },
   build: {
-    outDir: 'dist',
+    outDir: "dist",
     sourcemap: false,
     rollupOptions: {
       output: {

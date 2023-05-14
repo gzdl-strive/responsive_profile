@@ -1,0 +1,58 @@
+/* footer background */
+.footer__bg {
+  background-color: var(--theme-footer-bgColor);
+  color: var(--color-light);
+  padding: 6.8rem 0 5.6rem;
+  transition: background-color 0.3s linear;
+}
+
+/* footer content container */
+.footer__container {
+  padding: var(--layout-padding);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+/* footer title */
+.footer__title {
+  font-size: 2.4rem;
+  letter-spacing: .05rem;
+}
+
+/* footer subtitle */
+.footer__subtitle {
+  font-size: 1.3rem;
+  font-weight: 100;
+  margin-top: 1.5rem;
+  letter-spacing: .05rem;
+}
+
+/* footer links */
+.footer__link {
+  font-size: 1.6rem;
+  color: var(--color-light);
+}
+
+.footer__socials {
+  line-height: 4;
+  text-align: center;
+}
+
+.footer__social {
+  font-size: 1.4rem;
+  color: var(--color-light);
+}
+
+.footer__social:nth-child(n + 2) {
+  margin-left: 1rem;
+}
+
+.iconfont.footer__icon {
+  font-size: var(--iconSize-normal);
+}
+
+.footer__copy {
+  margin-top: 5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  color: var(--color-lightGray);
+}

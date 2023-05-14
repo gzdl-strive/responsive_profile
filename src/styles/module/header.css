@@ -1,0 +1,111 @@
+/* header style(头部导航栏样式) */
+.header {
+  height: var(--header-height);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: var(--theme-bgColor);
+  z-index: var(--header-zIndex);
+  transition: all .3s linear;
+}
+/* scroll status, header style(滚动状态下,header样式) */
+.header--scroll {
+  box-shadow: var(--header-boxShadow);
+}
+
+/* nav style(导航样式) */
+.nav {
+  max-width: 968px;
+  height: var(--header-height);
+}
+/* nav logo(导航logo) */
+.nav__logo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .05rem;
+  color: var(--theme-textColor);
+}
+/* nav menu(main) 导航(菜单/主体)内容 */
+.nav__menu {
+  margin-left: auto;
+  transition: all 0.2s ease-out;
+}
+
+.nav__link {
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  color: var(--theme-textColor);
+}
+
+.nav__link:hover .nav__icon,
+.nav__link:hover .nav__language {
+  color: var(--link-color);
+}
+
+.nav__link.active-link,
+.nav__link.active-link .nav__icon {
+  color: var(--theme-color);
+  text-shadow: 0 0.1rem 0.2rem var(--theme-color);
+  transform: scale(1.05);
+}
+
+.nav__link.active-link {
+  border-bottom: 0.2rem solid var(--theme-color);
+}
+
+/* need cover iconfont-style */
+.iconfont.nav__btn--toggle {
+  font-size: var(--iconSize-large);
+  color: var(--theme-textColor);
+}
+
+.iconfont.nav__icon,
+.iconfont.nav__language,
+.iconfont.nav__btn--theme {
+  font-size: var(--iconSize-small);
+  color: var(--theme-textColor);
+}
+
+.iconfont.nav__btn--eyeProtection {
+  font-size: var(--iconSize-normal);
+  color: var(--theme-textColor);
+}
+
+.nav__btn--toggle:hover,
+.nav__language:hover,
+.nav__btn--theme:hover,
+.nav__btn--eyeProtection:hover {
+  cursor: pointer;
+  color: var(--link-color);
+}
+
+.nav__close {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  color: var(--theme-color);
+  opacity: 0.9;
+  font-weight: bold;
+  transition: all 0.2s ease-in;
+}
+
+.iconfont.nav__close {
+  font-size: var(--iconSize-normal);
+}
+
+.nav__close:hover {
+  color: var(--link-color);
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.1);
+  transform: rotateZ(180deg);
+}
+
+.nav__btn--toggle,
+.nav__icon,
+.nav__languageText,
+.nav__close {
+  display: none;
+}

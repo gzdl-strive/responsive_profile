@@ -1,0 +1,63 @@
+{
+  "nav__base": "基础",
+  "nav__about": "关于",
+  "nav__skills": "技能",
+  "nav__portfolio": "作品集",
+  "nav__contact": "联系",
+  "nav__translate": "翻译",
+  "nav__btn--theme": "主题切换",
+  "nav__btn--eyeProtection": "护眼模式",
+  "nav__btn--toggle": "展开导航栏",
+
+  "base__title": "你好，我是",
+  "base__subtitle": "前端开发",
+  "base__description": "在网页设计和开发知识方面具有高级经验，生产高质量的工作。",
+  "base__contact": "与我联系",
+  "base__scroll": "往下滚动",
+
+  "about__title": "关于我",
+  "about__subtitle": "我的介绍",
+  "about__description": "Web开发人员，拥有丰富的知识和多年的经验，从事Web前端，提供高质量的工作。",
+  "about__workExperience": "工作 @//n 经验",
+  "about__completedProject": "完成 @//n 的项目",
+  "about__conpanyWorked": "任职过 @//n 的公司",
+  "about__downloadResume": "查看简历",
+
+  "skills__title": "技能",
+  "skills__subtitle": "技术熟练度",
+  "skill__title__frontend": "前端开发",
+  "skill__subtitle__frontend": "2年多工作经验",
+  "skill__title__backend": "后端开发",
+  "skill__subtitle__backend": "学习中..",
+
+  "experience__title": "经历",
+  "experience__subtitle": "我的个人履历",
+  "experience__education": "教育背景",
+  "experience__work": "工作经历",
+  "experience__speciality": "计算机科学与技术",
+  "experience__university": "吉林财经大学",
+  "experience__title--direction": "网页设计",
+  "experience__subtitle--way": "自学",
+  "experience__title--career": "前端开发",
+  "experience__subtitle--way2": "实习",
+  "experience__subtitle--working": "工作中...",
+
+  "portfolio__title": "作品集",
+  "portfolio__subtitle": "近期作品集",
+  "portfolio__subtitle--vitv": "该网站适用于PC屏幕，通过vite和vue3构建而成，是一个可以开箱即用的小型项目。",
+  "portfolio__subtitle--singleRoom": "一个只有房屋模型的网站，为学习Blender和Three.js而建。",
+  "portfolio__subtitle--profile": "为学习响应式而建立的网站，适用于任何设备。",
+  "portfolio__link--view": "查看",
+
+  "contact__title": "联系方式",
+  "contact__subtitle": "与我联系",
+
+  "footer__subtitle": "前端开发",
+  "footer__base": "基础",
+  "footer__skills": "技能",
+  "footer__portfolio": "作品集",
+
+  "icon__gitee": "码云",
+  "icon__juejin": "稀土掘金",
+  "icon__bilibili": "B站"
+}

@@ -1,0 +1,63 @@
+{
+  "nav__base": "base",
+  "nav__about": "about",
+  "nav__skills": "skills",
+  "nav__portfolio": "portfolio",
+  "nav__contact": "contact",
+  "nav__translate": "translate",
+  "nav__btn--theme": "switch theme",
+  "nav__btn--eyeProtection": "eye protection mode",
+  "nav__btn--toggle": "expand nav menu",
+
+  "base__title": "Hi, I'm",
+  "base__subtitle": "Frontend Developer",
+  "base__description": "High level experience in web design and development knowledge, producing quality work.",
+  "base__contact": "contact me",
+  "base__scroll": "scroll down",
+
+  "about__title": "about me",
+  "about__subtitle": "my introduction",
+  "about__description": "Web developer, with extensive knowledge and years of experience, working in web technologies, delivering quality work.",
+  "about__workExperience": "years of @//n experience",
+  "about__completedProject": "completed @//n project",
+  "about__conpanyWorked": "companies @//n worked",
+  "about__downloadResume": "resume",
+
+  "skills__title": "skills",
+  "skills__subtitle": "my technical level",
+  "skill__title__frontend": "frontend developer",
+  "skill__subtitle__frontend": "more then 2 years",
+  "skill__title__backend": "backend developer",
+  "skill__subtitle__backend": "learning...",
+
+  "experience__title": "experience",
+  "experience__subtitle": "my personal journey",
+  "experience__education": "education",
+  "experience__work": "work",
+  "experience__speciality": "computer engineer",
+  "experience__university": "JiLin University of Finance and Economics",
+  "experience__title--direction": "web design",
+  "experience__subtitle--way": "self-study",
+  "experience__title--career": "web development",
+  "experience__subtitle--way2": "practice",
+  "experience__subtitle--working": "working...",
+
+  "portfolio__title": "portfolio",
+  "portfolio__subtitle": "most recent works",
+  "portfolio__subtitle--vitv": "This website is suitable for PC screens, built on vite and vue3, and is a small backend project that is ready to use out of the box.",
+  "portfolio__subtitle--singleRoom": "A website with only a house model, built for learning Blender and Three.js.",
+  "portfolio__subtitle--profile": "A website established for learning responsiveness, suitable for any device.",
+  "portfolio__link--view": "view",
+
+  "contact__title": "contact",
+  "contact__subtitle": "get in touch",
+
+  "footer__subtitle": "Frontend Developer",
+  "footer__base": "base",
+  "footer__skills": "skills",
+  "footer__portfolio": "portfolio",
+
+  "icon__gitee": "gitee",
+  "icon__juejin": "juejin",
+  "icon__bilibili": "bilibili"
+}

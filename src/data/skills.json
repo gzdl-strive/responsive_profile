@@ -1,0 +1,31 @@
+{
+  "frontend": {
+    "title": "frontend developer",
+    "subtitle": "more then 2 years",
+    "headerIcon": "icon-frontend",
+    "defaultChecked": true,
+    "skillTree": {
+      "html": 80,
+      "css": 60,
+      "js": 55,
+      "ts": 70,
+      "jquery": 55,
+      "vue": 45,
+      "react": 40
+    },
+    "i18n": "frontend"
+  },
+  "backend": {
+    "title": "backend developer",
+    "subtitle": "learning...",
+    "headerIcon": "icon-backend",
+    "defaultChecked": false,
+    "skillTree": {
+      "node": 20,
+      "express": 20,
+      "websocket": 10,
+      "mysql": 10
+    },
+    "i18n": "backend"
+  }
+}
