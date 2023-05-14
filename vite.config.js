@@ -2,6 +2,7 @@ import { defineConfig } from "vite";
 import path from "path";
 
 export default defineConfig({
+  // Development Server Configuration(开发服务配置)
   server: {
     port: 8889,
     open: true

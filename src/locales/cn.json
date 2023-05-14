@@ -17,7 +17,7 @@
 
   "about__title": "关于我",
   "about__subtitle": "我的介绍",
-  "about__description": "Web开发人员，拥有丰富的知识和多年的经验，从事Web技术和Ui/Ux设计，提供高质量的工作。",
+  "about__description": "Web开发人员，拥有丰富的知识和多年的经验，从事Web前端，提供高质量的工作。",
   "about__workExperience": "工作 @//n 经验",
   "about__completedProject": "完成 @//n 的项目",
   "about__conpanyWorked": "任职过 @//n 的公司",
@@ -35,7 +35,7 @@
   "experience__education": "教育背景",
   "experience__work": "工作经历",
   "experience__speciality": "计算机科学与技术",
-  "experience__university": "****大学",
+  "experience__university": "吉林财经大学",
   "experience__title--direction": "网页设计",
   "experience__subtitle--way": "自学",
   "experience__title--career": "前端开发",

@@ -5,6 +5,7 @@
 
 .about__img {
   width: 30rem;
+  border-radius: 50%;
   justify-self: center;
   align-self: center;
   transition: all 0.3s ease-out;
