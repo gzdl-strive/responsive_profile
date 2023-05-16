@@ -1,4 +1,4 @@
-# GZDL-STRIVE [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/blob/main/LICENSE)
+# GZDL-STRIVE [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/responsive_profile/blob/main/LICENSE)
 
 English | [中文](README-CN.md)
 

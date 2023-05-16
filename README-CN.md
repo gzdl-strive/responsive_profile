@@ -1,4 +1,4 @@
-# gzdlprofile [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/blob/main/LICENSE)
+# gzdlprofile [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/responsive_profile/blob/main/LICENSE)
 
 [English](README.md) | 中文
 
