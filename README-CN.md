@@ -1,4 +1,4 @@
-# gzdlprofile [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/blob/main/LICENSE)
+# gzdlprofile [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/responsive_profile/blob/main/LICENSE)
 
 [English](README.md) | 中文
 
@@ -40,4 +40,4 @@
 * gzdl-strive
 
 ## 图例
-![case-cn](https://github.com/gzdl-strive/responsive_profile/blob/main/public/case-cn.jpg)
+![case-cn](http://124.222.103.60:8890/images/case-cn.jpg)

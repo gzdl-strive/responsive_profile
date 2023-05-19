@@ -1,4 +1,4 @@
-# GZDL-STRIVE [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/blob/main/LICENSE)
+# GZDL-STRIVE [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/gzdl-strive/responsive_profile/blob/main/LICENSE)
 
 English | [中文](README-CN.md)
 
@@ -40,4 +40,4 @@ Responsive Website Using Html, Css and JavaScript, with a beautiful user interfa
 * gzdl-strive
 
 ## Image Example
-![case](https://github.com/gzdl-strive/responsive_profile/blob/main/public/case.jpg)
+![case](http://124.222.103.60:8890/images/case.jpg)
