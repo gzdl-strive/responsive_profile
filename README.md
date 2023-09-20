@@ -11,7 +11,7 @@ Responsive Website Using Html, Css and JavaScript, with a beautiful user interfa
   - Build a responsive website that can support responses from various devices such as PCs and mobile devices - briefly introduce yourself.
 - *cause*：
   - Re learning Frontend - Emerging the idea of building a responsive website
-  - Consolidate the knowledge learned
+  - Consolidate the knowledge learned、BEM Specification
 
 ## Specification
 - `HTML Specification`
