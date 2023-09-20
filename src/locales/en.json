@@ -44,7 +44,9 @@
 
   "portfolio__title": "portfolio",
   "portfolio__subtitle": "most recent works",
+  "portfolio__subtitle--gzdlAdmin": "Monorepo style engineering with independent Vue UI component library, which can be used to build simple scaffolding based on the UI framework template, CICD",
   "portfolio__subtitle--vitv": "This website is suitable for PC screens, built on vite and vue3, and is a small backend project that is ready to use out of the box.",
+  "portfolio__subtitle--commandAssistant": "Command retrieval website. This Website is bulit using Vite + React + TypeScript, with a simple and beautiful user interface. Can quickly view notes",
   "portfolio__subtitle--singleRoom": "A website with only a house model, built for learning Blender and Three.js.",
   "portfolio__subtitle--profile": "A website established for learning responsiveness, suitable for any device.",
   "portfolio__link--view": "view",
