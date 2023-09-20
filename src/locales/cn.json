@@ -44,7 +44,9 @@
 
   "portfolio__title": "作品集",
   "portfolio__subtitle": "近期作品集",
+  "portfolio__subtitle--gzdlAdmin": "Monorepo风格的工程，含有独立的Vue UI组件库，可用于构建以该UI框架为基础模版的简易脚手架，可持续集成部署",
   "portfolio__subtitle--vitv": "该网站适用于PC屏幕，通过vite和vue3构建而成，是一个可以开箱即用的小型项目。",
+  "portfolio__subtitle--commandAssistant": "命令检索网站. 使用Vite + React + TypeScript构建，用户界面简约美观. 可以快速查看笔记.",
   "portfolio__subtitle--singleRoom": "一个只有房屋模型的网站，为学习Blender和Three.js而建。",
   "portfolio__subtitle--profile": "为学习响应式而建立的网站，适用于任何设备。",
   "portfolio__link--view": "查看",
